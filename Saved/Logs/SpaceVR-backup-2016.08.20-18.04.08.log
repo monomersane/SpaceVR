@@ -1,0 +1,1230 @@
+﻿Log file open, 08/19/16 18:17:59
+LogInit:Display: Running engine for game: SpaceVR
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1236359443) SRandInit(-1236274701).
+LogTaskGraph: Started task graph with 4 named threads and 5 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 8.780252
+LogInit: Version: 4.12.3-3013449+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3013449
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jun 14 2016 17:53:16
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.08.19-22.18.00:766][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.19-22.18.00:766][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.08.19-22.18.00:955][  0]LogInit: Computer: USER-PC
+[2016.08.19-22.18.00:972][  0]LogInit: User: USER
+[2016.08.19-22.18.00:972][  0]LogInit: CPU Page size=65536, Cores=2
+[2016.08.19-22.18.00:972][  0]LogInit: High frequency timer resolution =3.125039 MHz
+[2016.08.19-22.18.00:974][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.08.19-22.18.00:974][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.19-22.18.00:974][  0]LogMemory: Process Physical Memory: 189.42 MB used, 189.42 MB peak
+[2016.08.19-22.18.00:974][  0]LogMemory: Process Virtual Memory: 195.21 MB used, 195.21 MB peak
+[2016.08.19-22.18.00:974][  0]LogMemory: Physical Memory: 5479.61 MB used, 8053.58 MB total
+[2016.08.19-22.18.00:974][  0]LogMemory: Virtual Memory: 520.04 MB used, 8388608.00 MB total
+[2016.08.19-22.18.05:795][  0]LogD3D11RHI: D3D11 adapters:
+[2016.08.19-22.18.05:812][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 770' (Feature Level 11_0)
+[2016.08.19-22.18.05:812][  0]LogD3D11RHI:       1990/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2016.08.19-22.18.06:221][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics' (Feature Level 11_0)
+[2016.08.19-22.18.06:221][  0]LogD3D11RHI:       64/0/1632 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2016.08.19-22.18.06:221][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.08.19-22.18.06:296][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.08.19-22.18.06:296][  0]LogD3D11RHI:     GPU DeviceId: 0x1184 (for the marketing name, search the web for "GPU Device Id")
+[2016.08.19-22.18.06:296][  0]LogWindows: EnumDisplayDevices:
+[2016.08.19-22.18.06:296][  0]LogWindows:    0. 'NVIDIA GeForce GTX 770' (P:1 D:1)
+[2016.08.19-22.18.06:296][  0]LogWindows:    1. 'NVIDIA GeForce GTX 770' (P:0 D:0)
+[2016.08.19-22.18.06:296][  0]LogWindows:    2. 'NVIDIA GeForce GTX 770' (P:0 D:0)
+[2016.08.19-22.18.06:296][  0]LogWindows:    3. 'NVIDIA GeForce GTX 770' (P:0 D:0)
+[2016.08.19-22.18.06:296][  0]LogWindows:    4. 'Intel(R) HD Graphics' (P:0 D:0)
+[2016.08.19-22.18.06:296][  0]LogWindows:    5. 'Intel(R) HD Graphics' (P:0 D:0)
+[2016.08.19-22.18.06:297][  0]LogWindows:    6. 'Intel(R) HD Graphics' (P:0 D:0)
+[2016.08.19-22.18.06:297][  0]LogWindows:    7. 'RDPDD Chained DD' (P:0 D:0)
+[2016.08.19-22.18.06:297][  0]LogWindows:    8. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2016.08.19-22.18.06:297][  0]LogWindows:    9. 'RDP Reflector Display Driver' (P:0 D:0)
+[2016.08.19-22.18.06:297][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2016.08.19-22.18.06:297][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 770
+[2016.08.19-22.18.06:297][  0]LogD3D11RHI:   Driver Version: 353.06 (internal:9.18.13.5306, unified:353.06)
+[2016.08.19-22.18.06:297][  0]LogD3D11RHI:      Driver Date: 5-27-2015
+[2016.08.19-22.18.06:297][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.08.19-22.18.06:303][  0]LogD3D11RHI: Async texture creation enabled
+[2016.08.19-22.18.06:627][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2016.08.19-22.18.06:758][  0]LogShaderCompilers: Guid format shader working directory is -17 characters bigger than the processId version (../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Intermediate/Shaders/WorkingDirectory/5088/).
+[2016.08.19-22.18.06:758][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/USER/AppData/Local/Temp/UnrealShaderWorkingDir/1727D6184999E886D4CD8A8949AE9B9B/'.
+[2016.08.19-22.18.06:776][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.08.19-22.18.29:648][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.08.19-22.18.29:658][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.08.19-22.18.29:668][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.08.19-22.18.29:677][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.08.19-22.18.29:686][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.08.19-22.18.29:695][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.08.19-22.18.29:703][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.08.19-22.18.29:711][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.08.19-22.18.29:719][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.08.19-22.18.29:727][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.08.19-22.18.29:735][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.08.19-22.18.29:751][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.08.19-22.18.29:751][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.08.19-22.18.29:753][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.08.19-22.18.29:833][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.08.19-22.18.29:840][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.08.19-22.18.29:850][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.08.19-22.18.29:857][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.08.19-22.18.29:881][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.08.19-22.18.29:881][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.08.19-22.18.30:702][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.08.19-22.18.31:309][  0]LogDerivedDataCache: Loaded boot cache 0.59s 48MB C:/Users/USER/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.08.19-22.18.31:309][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/USER/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.08.19-22.18.31:309][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.08.19-22.18.31:309][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.08.19-22.18.31:309][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.08.19-22.18.31:309][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.08.19-22.18.31:397][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.08.19-22.18.31:474][  0]LogDerivedDataCache: Using Local data cache path C:/Users/USER/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.08.19-22.18.39:741][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.19-22.18.39:899][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.08.19-22.18.44:320][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.08.19-22.18.44:320][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.08.19-22.18.44:320][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.08.19-22.18.51:999][  0]LogAssetRegistry: FAssetRegistry took 0.0742 seconds to start up
+[2016.08.19-22.18.52:451][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.086812 seconds
+[2016.08.19-22.18.52:596][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.08.19-22.18.52:596][  0]LogUObjectAllocator: 5855632 out of 0 bytes used by permanent object pool.
+[2016.08.19-22.18.52:596][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.08.19-22.18.52:724][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.08.19-22.19.26:067][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.19-22.19.26:067][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.19-22.20.29:357][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.08.19-22.20.31:537][  0]SourceControl: Info Source control is disabled
+[2016.08.19-22.20.31:591][  0]SourceControl: Info Source control is disabled
+[2016.08.19-22.20.31:734][  0]SourceControl: Info Source control is disabled
+[2016.08.19-22.20.31:847][  0]SourceControl: Info Source control is disabled
+[2016.08.19-22.20.34:132][  0]LogEngine: Initializing Engine...
+[2016.08.19-22.20.34:193][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.08.19-22.20.34:194][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.08.19-22.20.35:187][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.08.19-22.20.35:393][  0]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.19-22.20.35:456][  0]LogInit: FAudioDevice initialized.
+[2016.08.19-22.20.35:481][  0]LogDerivedDataCache: Saved boot cache 0.03s 48MB C:/Users/USER/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.08.19-22.20.35:485][  0]LogInit: Texture streaming: Enabled
+[2016.08.19-22.20.35:907][  0]LogInit: Transaction tracking system initialized
+[2016.08.19-22.20.37:606][  0]BlueprintLog: New page: Editor Load
+[2016.08.19-22.20.47:759][  0]LocalizationService: Info Localization service is disabled
+[2016.08.19-22.20.52:612][  0]LogConsoleResponse:Display: 
+[2016.08.19-22.20.58:107][  0]LogFileCache: Scanning file cache for directory 'C:/Users/USER/Documents/Unreal Projects/SpaceVR/Content/' took 0.01s
+[2016.08.19-22.20.58:107][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.08.19-22.20.58:107][  0]LogCook:Display: Mobile HDR setting 1
+[2016.08.19-22.21.08:494][  0]SourceControl: Info Source control is disabled
+[2016.08.19-22.21.08:945][  0]Cmd: MAP LOAD FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Maps/FlyingExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.08.19-22.21.08:987][  0]LightingResults: New page: Lighting Build
+[2016.08.19-22.21.09:658][  0]MapCheck: New page: Map Check
+[2016.08.19-22.21.09:658][  0]LightingResults: New page: Lighting Build
+[2016.08.19-22.21.17:845][  0]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2016.08.19-22.21.19:425][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.08.19-22.21.19:624][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.08.19-22.21.19:713][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 88.763ms to complete.
+[2016.08.19-22.21.19:713][  0]LogFileHelpers: Loading map 'FlyingExampleMap' took 11.095
+[2016.08.19-22.21.29:193][  0]LogCollectionManager: Loaded 0 collections in 0.041440 seconds
+[2016.08.19-22.21.30:220][  0]LogFileCache: Scanning file cache for directory 'C:/Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Collections/' took 0.01s
+[2016.08.19-22.21.30:220][  0]LogFileCache: Scanning file cache for directory 'C:/Users/USER/Documents/Unreal Projects/SpaceVR/Content/Developers/USER/Collections/' took 0.01s
+[2016.08.19-22.21.30:220][  0]LogFileCache: Scanning file cache for directory 'C:/Users/USER/Documents/Unreal Projects/SpaceVR/Content/Collections/' took 0.00s
+[2016.08.19-22.21.30:220][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2016.08.19-22.21.30:248][  0]LogContentBrowser: Native class hierarchy populated in 0.0178 seconds. Added 2047 classes and 369 folders.
+[2016.08.19-22.21.30:333][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.08.19-22.21.30:333][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.08.19-22.21.30:333][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0005 seconds. Added 12 classes and 0 folders.
+[2016.08.19-22.21.30:471][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.08.19-22.21.36:938][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.08.19-22.21.37:971][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2016.08.19-22.21.53:725][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.08.19-22.21.54:536][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.08.19-22.21.55:552][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.08.19-22.21.55:552][  0]LogLoad: Full Startup: 254.93 seconds (BP compile: 1.72 seconds)
+[2016.08.19-22.21.55:552][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.08.19-22.21.55:552][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.08.19-22.21.55:949][  0]LogOcInput: OculusInput pre-init called
+[2016.08.19-22.21.56:618][  0]LogContentStreaming: Texture pool size now 200 MB
+[2016.08.19-22.22.01:275][  0]LogRenderer: Reallocating scene render targets to support 1060x576 (Frame:2).
+[2016.08.19-22.22.03:980][  3]LogAssetRegistry: Asset discovery search completed in 192.0149 seconds
+[2016.08.19-22.22.03:981][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2016.08.19-22.22.04:008][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.010673 seconds (updated 0 objects)
+[2016.08.20-00.00.19:143][ 37]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.08.20-00.00.19:166][ 37]LightingResults: New page: Lighting Build
+[2016.08.20-00.00.19:167][ 37]LoadErrors: New page: Loading map: Template_Default.umap
+[2016.08.20-00.00.19:183][ 37]MapCheck: New page: Map Check
+[2016.08.20-00.00.19:183][ 37]LightingResults: New page: Lighting Build
+[2016.08.20-00.00.19:599][ 37]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.00.19:707][ 37]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.08.20-00.00.19:717][ 37]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.08.20-00.00.19:746][ 37]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 28.283ms to complete.
+[2016.08.20-00.00.19:746][ 37]LogFileHelpers: Loading map 'Template_Default' took 0.640
+[2016.08.20-00.00.29:484][154]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2016.08.20-00.00.30:048][155]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.08.20-00.00.32:295][350]Cmd: DELETE
+[2016.08.20-00.00.32:295][350]Cmd: ACTOR DELETE
+[2016.08.20-00.00.32:416][350]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.08.20-00.00.32:464][350]LogEditorActor: Deleted 1 Actors (0.066 secs)
+[2016.08.20-00.00.43:478][480]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2016.08.20-00.00.54:166][659]Cmd: TRANSACTION UNDO
+[2016.08.20-00.00.54:166][659]LogEditorTransaction: Undo Scale Actors
+[2016.08.20-00.00.55:428][782]Cmd: TRANSACTION UNDO
+[2016.08.20-00.00.55:428][782]LogEditorTransaction: Undo Scale Actors
+[2016.08.20-00.00.57:142][968]Cmd: TRANSACTION UNDO
+[2016.08.20-00.00.57:143][968]LogEditorTransaction: Undo Scale Actors
+[2016.08.20-00.00.58:932][157]Cmd: TRANSACTION REDO
+[2016.08.20-00.00.58:932][157]LogEditorTransaction: Redo Scale Actors
+[2016.08.20-00.01.59:261][934]Cmd: TRANSACTION UNDO
+[2016.08.20-00.01.59:261][934]LogEditorTransaction: Undo Rotate Actors
+[2016.08.20-00.02.18:550][794]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-00.02.18:687][794]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 3:02:18 PM)
+[2016.08.20-00.02.18:688][794]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-00.02.18:690][794]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002448s)
+[2016.08.20-00.02.18:691][794]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.02.18:691][794]LogPlayLevel: PIE: World Init took: (0.000805s)
+[2016.08.20-00.02.18:691][794]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003476s)
+[2016.08.20-00.02.18:852][794]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-00.02.18:861][794]LogInit: FAudioDevice initialized.
+[2016.08.20-00.02.19:051][794]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-00.02.19:176][794]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-20.02.19
+[2016.08.20-00.02.19:185][794]LogWorld: Bringing up level for play took: 0.009724
+[2016.08.20-00.02.19:287][794]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 11 classes and 0 folders.
+[2016.08.20-00.02.19:364][794]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 1.559
+[2016.08.20-00.02.30:554][804]Cmd: SELECT NONE
+[2016.08.20-00.10.30:639][642]Cmd: OBJ SAVEPACKAGE PACKAGE="/Temp/Untitled_1" FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Temp/Untitled_1_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2016.08.20-00.10.30:751][642]LogSavePackage: Save=112.23ms
+[2016.08.20-00.10.30:751][642]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Untitled_1_Auto154A774094A43378C2D495DBD6C9146FA.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Temp/Untitled_1_Auto1.umap'
+[2016.08.20-00.10.30:752][642]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Temp/Untitled_1_Auto1.umap
+[2016.08.20-00.10.30:766][642]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.176
+[2016.08.20-00.10.30:766][642]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.176
+[2016.08.20-00.12.43:208][701]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 111 classes and 0 folders.
+[2016.08.20-00.18.54:694][744]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FlyingBP/Blueprints/FlyingPawn" FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset" SILENT=true
+[2016.08.20-00.18.54:953][744]LogSavePackage: Save=251.26ms
+[2016.08.20-00.18.54:953][744]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/FlyingPawn85CB4E804B92102A13DCD6BF52125775.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset'
+[2016.08.20-00.18.54:955][744]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset
+[2016.08.20-00.18.55:486][774]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.20-00.18.56:175][774]BlueprintEditorCompileResults: Info [7275.46] Compile of FlyingPawn successful! [in 688 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.20-00.18.59:449][999]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-00.18.59:450][999]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 3:18:59 PM)
+[2016.08.20-00.18.59:450][999]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-00.18.59:452][999]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001937s)
+[2016.08.20-00.18.59:453][999]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.18.59:453][999]LogPlayLevel: PIE: World Init took: (0.000680s)
+[2016.08.20-00.18.59:453][999]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002918s)
+[2016.08.20-00.18.59:546][999]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-00.18.59:551][999]LogInit: FAudioDevice initialized.
+[2016.08.20-00.18.59:630][999]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-00.18.59:632][999]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-20.18.59
+[2016.08.20-00.18.59:632][999]LogWorld: Bringing up level for play took: 0.001485
+[2016.08.20-00.18.59:633][999]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.185
+[2016.08.20-00.20.34:445][833]Cmd: OBJ SAVEPACKAGE PACKAGE="/Temp/Untitled_1" FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Temp/Untitled_1_Auto2.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2016.08.20-00.20.34:465][833]LogSavePackage: Save=19.66ms
+[2016.08.20-00.20.34:465][833]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Untitled_1_Auto211BD87C741D12BBF74BFBF91F5480AB0.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Temp/Untitled_1_Auto2.umap'
+[2016.08.20-00.20.34:466][833]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Temp/Untitled_1_Auto2.umap
+[2016.08.20-00.20.34:467][833]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.058
+[2016.08.20-00.20.34:467][833]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.058
+[2016.08.20-00.43.01:939][ 56]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FlyingBP/Blueprints/FlyingPawn" FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset" SILENT=true
+[2016.08.20-00.43.02:122][ 56]LogSavePackage: Save=157.75ms
+[2016.08.20-00.43.02:122][ 56]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/FlyingPawn6A8C017A4FD45936412A329ED831AB9A.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset'
+[2016.08.20-00.43.02:124][ 56]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset
+[2016.08.20-00.43.02:803][ 90]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.08.20-00.43.02:879][ 90]LogPlayLevel: [PlayLevel] Compiling FlyingPawn before play...
+[2016.08.20-00.43.03:039][ 90]LogPlayLevel: PlayLevel: Blueprint regeneration took 235 ms (1 blueprints)
+[2016.08.20-00.43.03:079][ 90]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 3:43:03 PM)
+[2016.08.20-00.43.03:079][ 90]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-00.43.03:082][ 90]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003274s)
+[2016.08.20-00.43.03:084][ 90]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.43.03:084][ 90]LogPlayLevel: PIE: World Init took: (0.001651s)
+[2016.08.20-00.43.03:084][ 90]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.005117s)
+[2016.08.20-00.43.03:186][ 90]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-00.43.03:192][ 90]LogInit: FAudioDevice initialized.
+[2016.08.20-00.43.03:269][ 90]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-00.43.03:271][ 90]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-20.43.03
+[2016.08.20-00.43.03:271][ 90]LogWorld: Bringing up level for play took: 0.002012
+[2016.08.20-00.43.03:272][ 90]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 1.435
+[2016.08.20-00.43.06:536][266]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-00.43.06:536][266]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 3:43:06 PM)
+[2016.08.20-00.43.06:536][266]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-00.43.06:538][266]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001959s)
+[2016.08.20-00.43.06:539][266]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.43.06:539][266]LogPlayLevel: PIE: World Init took: (0.000606s)
+[2016.08.20-00.43.06:539][266]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002764s)
+[2016.08.20-00.43.06:637][266]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-00.43.06:642][266]LogInit: FAudioDevice initialized.
+[2016.08.20-00.43.06:695][266]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-00.43.06:697][266]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-20.43.06
+[2016.08.20-00.43.06:697][266]LogWorld: Bringing up level for play took: 0.001954
+[2016.08.20-00.43.06:698][266]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.861
+[2016.08.20-00.43.21:061][767]Cmd: SELECT NONE
+[2016.08.20-00.43.31:974][382]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FlyingBP/Blueprints/FlyingPawn" FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset" SILENT=true
+[2016.08.20-00.43.32:122][382]LogSavePackage: Save=145.07ms
+[2016.08.20-00.43.32:122][382]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/FlyingPawn81398AF64DAB09BD941B71A9CF32E987.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset'
+[2016.08.20-00.43.32:123][382]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset
+[2016.08.20-00.43.35:258][555]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.08.20-00.43.35:260][555]LogPlayLevel: [PlayLevel] Compiling FlyingPawn before play...
+[2016.08.20-00.43.35:426][555]LogPlayLevel: PlayLevel: Blueprint regeneration took 168 ms (1 blueprints)
+[2016.08.20-00.43.35:464][555]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 3:43:35 PM)
+[2016.08.20-00.43.35:464][555]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-00.43.35:468][555]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003778s)
+[2016.08.20-00.43.35:469][555]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.43.35:469][555]LogPlayLevel: PIE: World Init took: (0.001777s)
+[2016.08.20-00.43.35:470][555]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.005762s)
+[2016.08.20-00.43.35:567][555]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-00.43.35:572][555]LogInit: FAudioDevice initialized.
+[2016.08.20-00.43.35:625][555]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-00.43.35:627][555]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-20.43.35
+[2016.08.20-00.43.35:627][555]LogWorld: Bringing up level for play took: 0.001909
+[2016.08.20-00.43.35:628][555]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.209
+[2016.08.20-00.49.09:809][348]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FlyingBP/Blueprints/FlyingPawn" FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset" SILENT=true
+[2016.08.20-00.49.09:971][348]LogSavePackage: Save=157.32ms
+[2016.08.20-00.49.09:972][348]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/FlyingPawnE1A1FC984C5D367C03D3219AE4172F83.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset'
+[2016.08.20-00.49.09:973][348]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset
+[2016.08.20-00.49.10:464][374]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.20-00.49.10:701][374]BlueprintEditorCompileResults: Info [9089.96] Compile of FlyingPawn successful! [in 236 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.20-00.49.14:847][625]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-00.49.14:847][625]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 3:49:14 PM)
+[2016.08.20-00.49.14:847][625]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-00.49.14:849][625]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002047s)
+[2016.08.20-00.49.14:850][625]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.49.14:850][625]LogPlayLevel: PIE: World Init took: (0.000720s)
+[2016.08.20-00.49.14:850][625]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002970s)
+[2016.08.20-00.49.14:951][625]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-00.49.14:956][625]LogInit: FAudioDevice initialized.
+[2016.08.20-00.49.15:006][625]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-00.49.15:008][625]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-20.49.15
+[2016.08.20-00.49.15:008][625]LogWorld: Bringing up level for play took: 0.001725
+[2016.08.20-00.49.15:009][625]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.833
+[2016.08.20-00.49.53:129][ 68]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FlyingBP/Blueprints/FlyingPawn" FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset" SILENT=true
+[2016.08.20-00.49.53:307][ 68]LogSavePackage: Save=174.13ms
+[2016.08.20-00.49.53:307][ 68]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/FlyingPawn3FF358D94FABA02B86CD87B8F59322F9.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset'
+[2016.08.20-00.49.53:309][ 68]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset
+[2016.08.20-00.49.53:859][ 98]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.20-00.49.54:066][ 98]BlueprintEditorCompileResults: Info [9133.32] Compile of FlyingPawn successful! [in 206 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.20-00.49.56:553][277]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-00.49.56:553][277]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 3:49:56 PM)
+[2016.08.20-00.49.56:553][277]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-00.49.56:556][277]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002520s)
+[2016.08.20-00.49.56:557][277]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.49.56:557][277]LogPlayLevel: PIE: World Init took: (0.000660s)
+[2016.08.20-00.49.56:557][277]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003380s)
+[2016.08.20-00.49.56:662][277]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-00.49.56:668][277]LogInit: FAudioDevice initialized.
+[2016.08.20-00.49.56:714][277]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-00.49.56:717][277]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-20.49.56
+[2016.08.20-00.49.56:717][277]LogWorld: Bringing up level for play took: 0.001920
+[2016.08.20-00.49.56:718][277]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.875
+[2016.08.20-00.51.18:462][ 83]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FlyingBP/Blueprints/FlyingPawn" FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset" SILENT=true
+[2016.08.20-00.51.18:627][ 83]LogSavePackage: Save=160.98ms
+[2016.08.20-00.51.18:627][ 83]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/FlyingPawnDBDFE8124486B32CDEB95F9B534E5C4E.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset'
+[2016.08.20-00.51.18:629][ 83]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset
+[2016.08.20-00.51.19:188][109]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.20-00.51.19:407][109]BlueprintEditorCompileResults: Info [9218.66] Compile of FlyingPawn successful! [in 219 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.20-00.51.21:925][296]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-00.51.21:925][296]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 3:51:21 PM)
+[2016.08.20-00.51.21:925][296]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-00.51.21:927][296]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002119s)
+[2016.08.20-00.51.21:928][296]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.51.21:928][296]LogPlayLevel: PIE: World Init took: (0.000604s)
+[2016.08.20-00.51.21:928][296]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002916s)
+[2016.08.20-00.51.22:030][296]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-00.51.22:046][296]LogInit: FAudioDevice initialized.
+[2016.08.20-00.51.22:093][296]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-00.51.22:095][296]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-20.51.22
+[2016.08.20-00.51.22:095][296]LogWorld: Bringing up level for play took: 0.001883
+[2016.08.20-00.51.22:096][296]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.252
+[2016.08.20-00.52.03:880][513]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FlyingBP/Blueprints/FlyingPawn" FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset" SILENT=true
+[2016.08.20-00.52.04:038][513]LogSavePackage: Save=155.31ms
+[2016.08.20-00.52.04:038][513]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/FlyingPawn2E4D891F4555045B667E858D08DD5493.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset'
+[2016.08.20-00.52.04:040][513]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset
+[2016.08.20-00.52.04:406][532]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.20-00.52.04:607][532]BlueprintEditorCompileResults: Info [9263.86] Compile of FlyingPawn successful! [in 200 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.20-00.52.07:101][708]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-00.52.07:101][708]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 3:52:07 PM)
+[2016.08.20-00.52.07:101][708]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-00.52.07:104][708]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003331s)
+[2016.08.20-00.52.07:106][708]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.52.07:106][708]LogPlayLevel: PIE: World Init took: (0.001629s)
+[2016.08.20-00.52.07:106][708]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.005151s)
+[2016.08.20-00.52.07:209][708]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-00.52.07:215][708]LogInit: FAudioDevice initialized.
+[2016.08.20-00.52.07:265][708]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-00.52.07:267][708]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-20.52.07
+[2016.08.20-00.52.07:267][708]LogWorld: Bringing up level for play took: 0.001749
+[2016.08.20-00.52.07:268][708]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.576
+[2016.08.20-00.52.18:126][785]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-00.52.18:126][785]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 3:52:18 PM)
+[2016.08.20-00.52.18:126][785]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-00.52.18:129][785]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002593s)
+[2016.08.20-00.52.18:131][785]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.52.18:131][785]LogPlayLevel: PIE: World Init took: (0.001979s)
+[2016.08.20-00.52.18:131][785]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.004758s)
+[2016.08.20-00.52.18:274][785]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-00.52.18:280][785]LogInit: FAudioDevice initialized.
+[2016.08.20-00.52.18:328][785]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-00.52.18:330][785]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-20.52.18
+[2016.08.20-00.52.18:330][785]LogWorld: Bringing up level for play took: 0.002066
+[2016.08.20-00.52.18:331][785]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.487
+[2016.08.20-00.52.44:015][339]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.20-00.52.44:221][339]BlueprintEditorCompileResults: Info [9303.48] Compile of FlyingPawn successful! [in 205 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.20-00.52.46:925][530]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-00.52.46:925][530]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 3:52:46 PM)
+[2016.08.20-00.52.46:925][530]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-00.52.46:928][530]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002719s)
+[2016.08.20-00.52.46:930][530]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.52.46:930][530]LogPlayLevel: PIE: World Init took: (0.001732s)
+[2016.08.20-00.52.46:930][530]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.004712s)
+[2016.08.20-00.52.47:025][530]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-00.52.47:030][530]LogInit: FAudioDevice initialized.
+[2016.08.20-00.52.47:080][530]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-00.52.47:082][530]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-20.52.47
+[2016.08.20-00.52.47:082][530]LogWorld: Bringing up level for play took: 0.001991
+[2016.08.20-00.52.47:083][530]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.762
+[2016.08.20-00.53.09:687][361]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.20-00.53.09:891][361]BlueprintEditorCompileResults: Info [9329.15] Compile of FlyingPawn successful! [in 203 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.20-00.53.12:301][518]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-00.53.12:301][518]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 3:53:12 PM)
+[2016.08.20-00.53.12:301][518]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-00.53.12:304][518]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002335s)
+[2016.08.20-00.53.12:304][518]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.53.12:304][518]LogPlayLevel: PIE: World Init took: (0.000652s)
+[2016.08.20-00.53.12:305][518]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003279s)
+[2016.08.20-00.53.12:408][518]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-00.53.12:413][518]LogInit: FAudioDevice initialized.
+[2016.08.20-00.53.12:462][518]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-00.53.12:464][518]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-20.53.12
+[2016.08.20-00.53.12:465][518]LogWorld: Bringing up level for play took: 0.001800
+[2016.08.20-00.53.12:466][518]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.62
+[2016.08.20-00.53.37:804][ 26]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.20-00.53.38:009][ 26]BlueprintEditorCompileResults: Info [9357.26] Compile of FlyingPawn successful! [in 204 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.20-00.53.39:829][155]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-00.53.39:830][155]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 3:53:39 PM)
+[2016.08.20-00.53.39:830][155]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-00.53.39:832][155]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002100s)
+[2016.08.20-00.53.39:832][155]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.53.39:832][155]LogPlayLevel: PIE: World Init took: (0.000605s)
+[2016.08.20-00.53.39:833][155]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002927s)
+[2016.08.20-00.53.39:929][155]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-00.53.39:934][155]LogInit: FAudioDevice initialized.
+[2016.08.20-00.53.39:978][155]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-00.53.39:980][155]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-20.53.39
+[2016.08.20-00.53.39:981][155]LogWorld: Bringing up level for play took: 0.001987
+[2016.08.20-00.53.39:982][155]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.136
+[2016.08.20-00.54.11:019][272]Cmd: OBJ SAVEPACKAGE PACKAGE="/Temp/Untitled_1" FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Temp/Untitled_1_Auto3.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2016.08.20-00.54.11:042][272]LogSavePackage: Save=23.52ms
+[2016.08.20-00.54.11:042][272]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Untitled_1_Auto31E6D4FFD4D32F7B48CA4B6B7760A91A3.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Temp/Untitled_1_Auto3.umap'
+[2016.08.20-00.54.11:043][272]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Temp/Untitled_1_Auto3.umap
+[2016.08.20-00.54.11:045][272]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.063
+[2016.08.20-00.54.11:045][272]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.063
+[2016.08.20-00.54.11:047][272]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/FlyingBP/Blueprints/FlyingPawn] ([1] browsable assets)...
+[2016.08.20-00.54.11:061][272]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn]
+[2016.08.20-00.54.11:061][272]OBJ SavePackage: Finished generating thumbnails for package [/Game/FlyingBP/Blueprints/FlyingPawn]
+[2016.08.20-00.54.11:225][272]LogSavePackage: Save=159.33ms
+[2016.08.20-00.54.11:225][272]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/FlyingPawn_Auto3FBB3F99D445BF388DF9DDBAB2AA705A7.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Game/FlyingBP/Blueprints/FlyingPawn_Auto3.uasset'
+[2016.08.20-00.54.11:227][272]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Game/FlyingBP/Blueprints/FlyingPawn_Auto3.uasset
+[2016.08.20-00.54.11:227][272]LogFileHelpers: Auto-saving content packages took 0.181
+[2016.08.20-00.54.51:490][981]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.20-00.54.51:704][981]BlueprintEditorCompileResults: Info [9430.96] Compile of FlyingPawn successful! [in 214 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.20-00.54.53:612][101]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-00.54.53:613][101]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 3:54:53 PM)
+[2016.08.20-00.54.53:613][101]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-00.54.53:617][101]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004610s)
+[2016.08.20-00.54.53:618][101]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.54.53:618][101]LogPlayLevel: PIE: World Init took: (0.000612s)
+[2016.08.20-00.54.53:618][101]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.005414s)
+[2016.08.20-00.54.53:732][101]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-00.54.53:741][101]LogInit: FAudioDevice initialized.
+[2016.08.20-00.54.53:793][101]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-00.54.53:795][101]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-20.54.53
+[2016.08.20-00.54.53:795][101]LogWorld: Bringing up level for play took: 0.002141
+[2016.08.20-00.54.53:796][101]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.05
+[2016.08.20-00.58.45:874][827]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-00.58.45:874][827]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 3:58:45 PM)
+[2016.08.20-00.58.45:874][827]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-00.58.45:876][827]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002592s)
+[2016.08.20-00.58.45:877][827]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-00.58.45:877][827]LogPlayLevel: PIE: World Init took: (0.000744s)
+[2016.08.20-00.58.45:878][827]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003785s)
+[2016.08.20-00.58.46:008][827]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-00.58.46:034][827]LogInit: FAudioDevice initialized.
+[2016.08.20-00.58.46:080][827]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-00.58.46:085][827]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-20.58.46
+[2016.08.20-00.58.46:085][827]LogWorld: Bringing up level for play took: 0.004416
+[2016.08.20-00.58.46:086][827]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.237
+[2016.08.20-00.59.42:219][881]LogRenderer: Reallocating scene render targets to support 1248x712 (Frame:138640).
+[2016.08.20-01.00.47:817][ 72]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FlyingBP/Blueprints/trackmap" FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/trackmap.uasset" SILENT=true
+[2016.08.20-01.00.47:843][ 72]LogSavePackage: Save=25.21ms
+[2016.08.20-01.00.47:843][ 72]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/trackmapC45BAAA04F2B1A7D600E37886334668D.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/trackmap.uasset'
+[2016.08.20-01.00.47:844][ 72]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/trackmap.uasset
+[2016.08.20-01.01.38:698][552]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.08.20-01.01.38:699][552]LogPlayLevel: [PlayLevel] Compiling trackmap before play...
+[2016.08.20-01.01.38:931][552]LogPlayLevel: PlayLevel: Blueprint regeneration took 232 ms (1 blueprints)
+[2016.08.20-01.01.39:001][552]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:01:39 PM)
+[2016.08.20-01.01.39:001][552]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.01.39:004][552]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002593s)
+[2016.08.20-01.01.39:005][552]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.01.39:005][552]LogPlayLevel: PIE: World Init took: (0.000915s)
+[2016.08.20-01.01.39:005][552]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003785s)
+[2016.08.20-01.01.39:100][552]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.01.39:107][552]LogInit: FAudioDevice initialized.
+[2016.08.20-01.01.39:155][552]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.01.39:157][552]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.01.39
+[2016.08.20-01.01.39:157][552]LogWorld: Bringing up level for play took: 0.002188
+[2016.08.20-01.01.39:158][552]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 1.306
+[2016.08.20-01.02.00:403][571]Cmd: DELETE
+[2016.08.20-01.02.00:403][571]Cmd: ACTOR DELETE
+[2016.08.20-01.02.00:404][571]LogEditorActor: Deleted Actor: FlyingPawn_C
+[2016.08.20-01.02.00:469][571]LogEditorActor: Deleted 1 Actors (0.065 secs)
+[2016.08.20-01.02.25:911][181]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.02.25:912][181]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:02:25 PM)
+[2016.08.20-01.02.25:912][181]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.02.25:915][181]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003697s)
+[2016.08.20-01.02.25:917][181]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.02.25:917][181]LogPlayLevel: PIE: World Init took: (0.001541s)
+[2016.08.20-01.02.25:917][181]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.005442s)
+[2016.08.20-01.02.26:017][181]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.02.26:022][181]LogInit: FAudioDevice initialized.
+[2016.08.20-01.02.26:072][181]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.02.26:074][181]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.02.26
+[2016.08.20-01.02.26:179][181]LogWorld: Bringing up level for play took: 0.106796
+[2016.08.20-01.02.26:250][181]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.397
+[2016.08.20-01.02.49:150][379]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.02.49:150][379]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:02:49 PM)
+[2016.08.20-01.02.49:151][379]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.02.49:154][379]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003464s)
+[2016.08.20-01.02.49:156][379]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.02.49:156][379]LogPlayLevel: PIE: World Init took: (0.001706s)
+[2016.08.20-01.02.49:156][379]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.005366s)
+[2016.08.20-01.02.49:250][379]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.02.49:259][379]LogInit: FAudioDevice initialized.
+[2016.08.20-01.02.49:310][379]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.02.49:311][379]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.02.49
+[2016.08.20-01.02.49:312][379]LogWorld: Bringing up level for play took: 0.001771
+[2016.08.20-01.02.49:313][379]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.54
+[2016.08.20-01.03.24:817][253]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.03.24:819][253]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:03:24 PM)
+[2016.08.20-01.03.24:819][253]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.03.24:821][253]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002872s)
+[2016.08.20-01.03.24:822][253]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.03.24:822][253]LogPlayLevel: PIE: World Init took: (0.000616s)
+[2016.08.20-01.03.24:822][253]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003718s)
+[2016.08.20-01.03.24:913][253]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.03.24:919][253]LogInit: FAudioDevice initialized.
+[2016.08.20-01.03.24:969][253]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.03.24:970][253]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.03.24
+[2016.08.20-01.03.24:971][253]LogWorld: Bringing up level for play took: 0.001729
+[2016.08.20-01.03.24:972][253]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 1.118
+[2016.08.20-01.03.28:979][642]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (Sky Sphere)
+[2016.08.20-01.03.30:538][766]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2016.08.20-01.03.33:258][988]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.03.33:258][988]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:03:33 PM)
+[2016.08.20-01.03.33:258][988]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.03.33:262][988]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003463s)
+[2016.08.20-01.03.33:263][988]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.03.33:263][988]LogPlayLevel: PIE: World Init took: (0.001400s)
+[2016.08.20-01.03.33:263][988]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.005055s)
+[2016.08.20-01.03.33:334][988]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.03.33:341][988]LogInit: FAudioDevice initialized.
+[2016.08.20-01.03.33:391][988]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.03.33:394][988]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.03.33
+[2016.08.20-01.03.33:394][988]LogWorld: Bringing up level for play took: 0.002998
+[2016.08.20-01.03.33:395][988]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.459
+[2016.08.20-01.03.45:401][272]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.03.45:402][272]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:03:45 PM)
+[2016.08.20-01.03.45:402][272]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.03.45:405][272]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003010s)
+[2016.08.20-01.03.45:406][272]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.03.45:406][272]LogPlayLevel: PIE: World Init took: (0.001349s)
+[2016.08.20-01.03.45:406][272]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.004557s)
+[2016.08.20-01.03.45:476][272]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.03.45:480][272]LogInit: FAudioDevice initialized.
+[2016.08.20-01.03.45:530][272]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.03.45:531][272]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.03.45
+[2016.08.20-01.03.45:532][272]LogWorld: Bringing up level for play took: 0.001700
+[2016.08.20-01.03.45:533][272]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.321
+[2016.08.20-01.04.12:476][248]Cmd: SELECT NONE
+[2016.08.20-01.04.13:107][301]Cmd: SELECT NONE
+[2016.08.20-01.04.17:403][734]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.04.17:403][734]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:04:17 PM)
+[2016.08.20-01.04.17:403][734]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.04.17:407][734]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003684s)
+[2016.08.20-01.04.17:409][734]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.04.17:409][734]LogPlayLevel: PIE: World Init took: (0.002353s)
+[2016.08.20-01.04.17:410][734]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.006241s)
+[2016.08.20-01.04.17:479][734]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.04.17:493][734]LogInit: FAudioDevice initialized.
+[2016.08.20-01.04.17:539][734]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.04.17:540][734]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.04.17
+[2016.08.20-01.04.17:541][734]LogWorld: Bringing up level for play took: 0.001572
+[2016.08.20-01.04.17:542][734]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.312
+[2016.08.20-01.04.26:427][687]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.04.26:428][687]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:04:26 PM)
+[2016.08.20-01.04.26:428][687]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.04.26:430][687]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001947s)
+[2016.08.20-01.04.26:430][687]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.04.26:430][687]LogPlayLevel: PIE: World Init took: (0.000543s)
+[2016.08.20-01.04.26:430][687]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002682s)
+[2016.08.20-01.04.26:503][687]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.04.26:510][687]LogInit: FAudioDevice initialized.
+[2016.08.20-01.04.26:558][687]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.04.26:560][687]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.04.26
+[2016.08.20-01.04.26:560][687]LogWorld: Bringing up level for play took: 0.002223
+[2016.08.20-01.04.26:561][687]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.707
+[2016.08.20-01.04.42:142][138]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.04.42:142][138]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:04:42 PM)
+[2016.08.20-01.04.42:142][138]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.04.42:145][138]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002941s)
+[2016.08.20-01.04.42:146][138]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.04.42:146][138]LogPlayLevel: PIE: World Init took: (0.001385s)
+[2016.08.20-01.04.42:146][138]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.004515s)
+[2016.08.20-01.04.42:247][138]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.04.42:252][138]LogInit: FAudioDevice initialized.
+[2016.08.20-01.04.42:297][138]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.04.42:300][138]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.04.42
+[2016.08.20-01.04.42:300][138]LogWorld: Bringing up level for play took: 0.002978
+[2016.08.20-01.04.42:301][138]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.446
+[2016.08.20-01.06.42:700][127]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.20-01.06.42:911][127]BlueprintEditorCompileResults: Info [0142.16] Compile of FlyingPawn successful! [in 211 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.20-01.06.44:860][256]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.06.44:860][256]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:06:44 PM)
+[2016.08.20-01.06.44:860][256]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.06.44:863][256]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002900s)
+[2016.08.20-01.06.44:865][256]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.06.44:865][256]LogPlayLevel: PIE: World Init took: (0.001580s)
+[2016.08.20-01.06.44:865][256]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.004677s)
+[2016.08.20-01.06.44:965][256]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.06.44:970][256]LogInit: FAudioDevice initialized.
+[2016.08.20-01.06.45:019][256]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.06.45:022][256]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.06.45
+[2016.08.20-01.06.45:023][256]LogWorld: Bringing up level for play took: 0.003030
+[2016.08.20-01.06.45:024][256]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.833
+[2016.08.20-01.06.45:100][260]LogActor:Warning: FlyingPawn is outside the world bounds!
+[2016.08.20-01.06.45:106][261]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.45:114][262]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.45:123][263]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.45:131][264]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.45:140][265]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.45:148][266]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.45:156][267]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.45:164][268]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.45:173][269]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.49:451][689]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.06.49:451][689]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:06:49 PM)
+[2016.08.20-01.06.49:451][689]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.06.49:454][689]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002985s)
+[2016.08.20-01.06.49:455][689]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.06.49:455][689]LogPlayLevel: PIE: World Init took: (0.001384s)
+[2016.08.20-01.06.49:455][689]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.004569s)
+[2016.08.20-01.06.49:549][689]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.06.49:554][689]LogInit: FAudioDevice initialized.
+[2016.08.20-01.06.49:603][689]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.06.49:607][689]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.06.49
+[2016.08.20-01.06.49:607][689]LogWorld: Bringing up level for play took: 0.003255
+[2016.08.20-01.06.49:608][689]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.248
+[2016.08.20-01.06.49:654][693]LogActor:Warning: FlyingPawn is outside the world bounds!
+[2016.08.20-01.06.49:662][694]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.49:670][695]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.49:679][696]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.49:687][697]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.49:696][698]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.49:704][699]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.49:716][700]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.49:724][701]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.49:733][702]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.49:741][703]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.49:750][704]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.49:758][705]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.57:420][321]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.06.57:420][321]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:06:57 PM)
+[2016.08.20-01.06.57:420][321]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.06.57:424][321]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003539s)
+[2016.08.20-01.06.57:425][321]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.06.57:426][321]LogPlayLevel: PIE: World Init took: (0.001608s)
+[2016.08.20-01.06.57:426][321]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.005342s)
+[2016.08.20-01.06.57:523][321]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.06.57:528][321]LogInit: FAudioDevice initialized.
+[2016.08.20-01.06.57:576][321]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.06.57:579][321]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.06.57
+[2016.08.20-01.06.57:579][321]LogWorld: Bringing up level for play took: 0.001866
+[2016.08.20-01.06.57:580][321]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.276
+[2016.08.20-01.06.57:628][325]LogActor:Warning: FlyingPawn is outside the world bounds!
+[2016.08.20-01.06.57:636][326]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.57:644][327]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.57:652][328]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.57:661][329]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.57:669][330]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.57:677][331]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.57:686][332]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.57:694][333]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.57:702][334]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.57:711][335]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.57:719][336]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.06.57:727][337]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.04:677][986]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.07.04:677][986]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:07:04 PM)
+[2016.08.20-01.07.04:677][986]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.07.04:679][986]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001960s)
+[2016.08.20-01.07.04:679][986]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.07.04:679][986]LogPlayLevel: PIE: World Init took: (0.000606s)
+[2016.08.20-01.07.04:680][986]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002783s)
+[2016.08.20-01.07.04:781][986]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.07.04:795][986]LogInit: FAudioDevice initialized.
+[2016.08.20-01.07.04:840][986]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.07.04:842][986]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.07.04
+[2016.08.20-01.07.04:843][986]LogWorld: Bringing up level for play took: 0.002131
+[2016.08.20-01.07.04:844][986]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.987
+[2016.08.20-01.07.04:892][990]LogActor:Warning: FlyingPawn is outside the world bounds!
+[2016.08.20-01.07.04:900][991]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.04:909][992]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.04:917][993]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.04:926][994]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.04:934][995]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.04:943][996]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.04:951][997]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.04:960][998]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.04:968][999]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.04:977][  0]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.04:985][  1]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.04:993][  2]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.42:716][399]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.07.42:716][399]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:07:42 PM)
+[2016.08.20-01.07.42:716][399]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.07.42:719][399]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002991s)
+[2016.08.20-01.07.42:721][399]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.07.42:721][399]LogPlayLevel: PIE: World Init took: (0.001458s)
+[2016.08.20-01.07.42:721][399]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.004640s)
+[2016.08.20-01.07.42:821][399]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.07.42:960][399]LogInit: FAudioDevice initialized.
+[2016.08.20-01.07.43:026][399]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.07.43:028][399]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.07.43
+[2016.08.20-01.07.43:028][399]LogWorld: Bringing up level for play took: 0.001755
+[2016.08.20-01.07.43:029][399]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 1.173
+[2016.08.20-01.07.43:071][403]LogActor:Warning: FlyingPawn is outside the world bounds!
+[2016.08.20-01.07.43:079][404]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.43:088][405]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.43:097][406]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.43:105][407]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.43:113][408]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.43:122][409]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.43:131][410]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.43:142][411]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.43:150][412]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.43:159][413]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.43:168][414]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.07.43:177][415]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.11:676][806]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.08.11:676][806]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:08:11 PM)
+[2016.08.20-01.08.11:676][806]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.08.11:679][806]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002968s)
+[2016.08.20-01.08.11:681][806]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.08.11:681][806]LogPlayLevel: PIE: World Init took: (0.001595s)
+[2016.08.20-01.08.11:681][806]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.004765s)
+[2016.08.20-01.08.11:780][806]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.08.11:786][806]LogInit: FAudioDevice initialized.
+[2016.08.20-01.08.11:833][806]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.08.11:838][806]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.08.11
+[2016.08.20-01.08.11:839][806]LogWorld: Bringing up level for play took: 0.005939
+[2016.08.20-01.08.11:840][806]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.017
+[2016.08.20-01.08.11:880][810]LogActor:Warning: FlyingPawn is outside the world bounds!
+[2016.08.20-01.08.11:888][811]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.11:897][812]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.11:905][813]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.11:913][814]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.11:922][815]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.11:931][816]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.11:939][817]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.11:947][818]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.11:955][819]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.11:964][820]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.11:972][821]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.11:980][822]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.23:614][960]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.08.23:614][960]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:08:23 PM)
+[2016.08.20-01.08.23:614][960]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.08.23:616][960]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002302s)
+[2016.08.20-01.08.23:617][960]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.08.23:617][960]LogPlayLevel: PIE: World Init took: (0.000632s)
+[2016.08.20-01.08.23:617][960]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003147s)
+[2016.08.20-01.08.23:727][960]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.08.23:732][960]LogInit: FAudioDevice initialized.
+[2016.08.20-01.08.23:780][960]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.08.23:782][960]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.08.23
+[2016.08.20-01.08.23:783][960]LogWorld: Bringing up level for play took: 0.001774
+[2016.08.20-01.08.23:784][960]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.074
+[2016.08.20-01.08.23:839][965]LogActor:Warning: FlyingPawn is outside the world bounds!
+[2016.08.20-01.08.23:848][966]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.23:858][967]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.23:866][968]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.23:874][969]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.23:883][970]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.23:891][971]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.23:899][972]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.23:908][973]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.23:916][974]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.23:925][975]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.23:933][976]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.23:941][977]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.25:566][124]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.08.25:566][124]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:08:25 PM)
+[2016.08.20-01.08.25:566][124]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.08.25:570][124]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003505s)
+[2016.08.20-01.08.25:571][124]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.08.25:571][124]LogPlayLevel: PIE: World Init took: (0.001423s)
+[2016.08.20-01.08.25:571][124]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.005124s)
+[2016.08.20-01.08.25:690][124]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.08.25:695][124]LogInit: FAudioDevice initialized.
+[2016.08.20-01.08.25:745][124]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.08.25:747][124]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.08.25
+[2016.08.20-01.08.25:748][124]LogWorld: Bringing up level for play took: 0.001926
+[2016.08.20-01.08.25:748][124]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.109
+[2016.08.20-01.08.25:793][128]LogActor:Warning: FlyingPawn is outside the world bounds!
+[2016.08.20-01.08.25:802][129]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.25:810][130]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.25:818][131]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.25:827][132]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.25:835][133]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.25:843][134]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.25:851][135]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.25:860][136]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.25:868][137]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.25:876][138]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.25:885][139]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.25:893][140]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.26:826][210]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.08.26:826][210]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:08:26 PM)
+[2016.08.20-01.08.26:826][210]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.08.26:828][210]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002005s)
+[2016.08.20-01.08.26:829][210]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.08.26:829][210]LogPlayLevel: PIE: World Init took: (0.000626s)
+[2016.08.20-01.08.26:829][210]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002834s)
+[2016.08.20-01.08.26:934][210]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.08.26:937][210]LogInit: FAudioDevice initialized.
+[2016.08.20-01.08.26:982][210]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.08.26:984][210]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.08.26
+[2016.08.20-01.08.26:985][210]LogWorld: Bringing up level for play took: 0.001969
+[2016.08.20-01.08.26:986][210]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 1.129
+[2016.08.20-01.08.27:038][213]LogActor:Warning: FlyingPawn is outside the world bounds!
+[2016.08.20-01.08.27:048][214]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.27:058][215]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.27:066][216]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.27:075][217]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.27:083][218]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.27:092][219]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.27:100][220]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.27:109][221]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.27:119][222]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.27:127][223]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.27:135][224]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.27:144][225]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.08.47:860][298]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.20-01.08.48:062][298]BlueprintEditorCompileResults: Info [0267.30] Compile of FlyingPawn successful! [in 201 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.20-01.08.49:629][390]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.08.49:629][390]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:08:49 PM)
+[2016.08.20-01.08.49:629][390]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.08.49:632][390]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003006s)
+[2016.08.20-01.08.49:634][390]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.08.49:634][390]LogPlayLevel: PIE: World Init took: (0.001516s)
+[2016.08.20-01.08.49:634][390]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.004714s)
+[2016.08.20-01.08.49:733][390]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.08.49:738][390]LogInit: FAudioDevice initialized.
+[2016.08.20-01.08.49:788][390]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.08.49:790][390]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.08.49
+[2016.08.20-01.08.49:790][390]LogWorld: Bringing up level for play took: 0.001741
+[2016.08.20-01.08.49:791][390]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.067
+[2016.08.20-01.09.13:148][303]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.20-01.09.13:354][303]BlueprintEditorCompileResults: Info [0292.60] Compile of FlyingPawn successful! [in 206 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.20-01.09.15:150][417]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.09.15:151][417]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:09:15 PM)
+[2016.08.20-01.09.15:151][417]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.09.15:153][417]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002330s)
+[2016.08.20-01.09.15:154][417]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.09.15:154][417]LogPlayLevel: PIE: World Init took: (0.000608s)
+[2016.08.20-01.09.15:154][417]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003138s)
+[2016.08.20-01.09.15:254][417]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.09.15:259][417]LogInit: FAudioDevice initialized.
+[2016.08.20-01.09.15:308][417]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.09.15:310][417]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.09.15
+[2016.08.20-01.09.15:310][417]LogWorld: Bringing up level for play took: 0.001819
+[2016.08.20-01.09.15:311][417]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.547
+[2016.08.20-01.09.43:003][634]LogActor:Warning: FlyingPawn is outside the world bounds!
+[2016.08.20-01.09.43:020][635]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.43:038][636]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.43:060][637]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.43:076][638]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.43:094][639]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.43:110][640]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.43:584][690]Cmd: SELECT NONE
+[2016.08.20-01.09.43:976][728]Cmd: SELECT NONE
+[2016.08.20-01.09.54:942][341]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.20-01.09.55:144][341]BlueprintEditorCompileResults: Info [0334.39] Compile of FlyingPawn successful! [in 201 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.20-01.09.56:736][438]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.09.56:736][438]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:09:56 PM)
+[2016.08.20-01.09.56:736][438]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.09.56:738][438]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002388s)
+[2016.08.20-01.09.56:739][438]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.09.56:739][438]LogPlayLevel: PIE: World Init took: (0.000616s)
+[2016.08.20-01.09.56:739][438]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003205s)
+[2016.08.20-01.09.56:838][438]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.09.56:849][438]LogInit: FAudioDevice initialized.
+[2016.08.20-01.09.56:894][438]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.09.56:896][438]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.09.56
+[2016.08.20-01.09.56:896][438]LogWorld: Bringing up level for play took: 0.001815
+[2016.08.20-01.09.56:897][438]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 1.038
+[2016.08.20-01.09.56:939][441]LogActor:Warning: FlyingPawn is outside the world bounds!
+[2016.08.20-01.09.56:947][442]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.56:955][443]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.56:966][444]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.56:974][445]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.56:983][446]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.56:991][447]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.56:999][448]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.57:007][449]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.57:016][450]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.57:024][451]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.57:033][452]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.09.57:041][453]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.09:629][320]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.20-01.10.09:840][320]BlueprintEditorCompileResults: Info [0349.08] Compile of FlyingPawn successful! [in 211 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.20-01.10.11:639][439]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.10.11:639][439]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:10:11 PM)
+[2016.08.20-01.10.11:640][439]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.10.11:642][439]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002440s)
+[2016.08.20-01.10.11:643][439]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.10.11:643][439]LogPlayLevel: PIE: World Init took: (0.000599s)
+[2016.08.20-01.10.11:643][439]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003246s)
+[2016.08.20-01.10.11:745][439]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.10.11:750][439]LogInit: FAudioDevice initialized.
+[2016.08.20-01.10.11:801][439]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.10.11:803][439]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.10.11
+[2016.08.20-01.10.11:803][439]LogWorld: Bringing up level for play took: 0.001908
+[2016.08.20-01.10.11:804][439]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.054
+[2016.08.20-01.10.11:827][441]LogActor:Warning: FlyingPawn is outside the world bounds!
+[2016.08.20-01.10.11:835][442]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.11:843][443]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.11:852][444]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.11:860][445]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.11:868][446]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.11:877][447]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.11:885][448]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.11:893][449]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.11:902][450]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.11:910][451]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.11:918][452]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.11:927][453]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.14:358][675]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.10.14:360][675]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:10:14 PM)
+[2016.08.20-01.10.14:360][675]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.10.14:363][675]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003222s)
+[2016.08.20-01.10.14:365][675]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.10.14:365][675]LogPlayLevel: PIE: World Init took: (0.001644s)
+[2016.08.20-01.10.14:365][675]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.005063s)
+[2016.08.20-01.10.14:458][675]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.10.14:463][675]LogInit: FAudioDevice initialized.
+[2016.08.20-01.10.14:512][675]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.10.14:514][675]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.10.14
+[2016.08.20-01.10.14:514][675]LogWorld: Bringing up level for play took: 0.001698
+[2016.08.20-01.10.14:515][675]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.656
+[2016.08.20-01.10.14:539][677]LogActor:Warning: FlyingPawn is outside the world bounds!
+[2016.08.20-01.10.14:547][678]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.14:555][679]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.14:564][680]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.14:572][681]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.14:580][682]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.14:589][683]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.14:597][684]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.14:605][685]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.14:614][686]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.14:626][687]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.14:634][688]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.14:642][689]PIE:Warning: Warning FlyingPawn.Plane mesh UFO has to have 'Simulate Physics' enabled if you'd like to AddForceAtLocation. 
+[2016.08.20-01.10.27:571][356]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.20-01.10.27:774][356]BlueprintEditorCompileResults: Info [0367.02] Compile of FlyingPawn successful! [in 202 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.20-01.10.29:209][449]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.20-01.10.29:209][449]PIE: New page: PIE session: Untitled_1 (Aug 19, 2016, 4:10:29 PM)
+[2016.08.20-01.10.29:210][449]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.08.20-01.10.29:212][449]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002146s)
+[2016.08.20-01.10.29:212][449]LogAIModule: Creating AISystem for world Untitled_1
+[2016.08.20-01.10.29:212][449]LogPlayLevel: PIE: World Init took: (0.000584s)
+[2016.08.20-01.10.29:212][449]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002940s)
+[2016.08.20-01.10.29:308][449]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.20-01.10.29:313][449]LogInit: FAudioDevice initialized.
+[2016.08.20-01.10.29:362][449]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.20-01.10.29:364][449]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.08.19-21.10.29
+[2016.08.20-01.10.29:365][449]LogWorld: Bringing up level for play took: 0.002746
+[2016.08.20-01.10.29:366][449]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.492
+[2016.08.20-01.10.55:803][736]Cmd: OBJ SAVEPACKAGE PACKAGE="/Temp/Untitled_1" FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Temp/Untitled_1_Auto4.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2016.08.20-01.10.55:829][736]LogSavePackage: Save=25.15ms
+[2016.08.20-01.10.55:829][736]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Untitled_1_Auto42D5507E9445FED2600AB5F8040014BFA.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Temp/Untitled_1_Auto4.umap'
+[2016.08.20-01.10.55:830][736]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Temp/Untitled_1_Auto4.umap
+[2016.08.20-01.10.55:832][736]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.064
+[2016.08.20-01.10.55:832][736]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.064
+[2016.08.20-01.10.55:835][736]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/FlyingBP/Blueprints/FlyingPawn] ([1] browsable assets)...
+[2016.08.20-01.10.55:850][736]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn]
+[2016.08.20-01.10.55:850][736]OBJ SavePackage: Finished generating thumbnails for package [/Game/FlyingBP/Blueprints/FlyingPawn]
+[2016.08.20-01.10.56:072][736]LogSavePackage: Save=205.41ms
+[2016.08.20-01.10.56:072][736]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/FlyingPawn_Auto4B71981BA49CE354D262BB384E736CE12.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Game/FlyingBP/Blueprints/FlyingPawn_Auto4.uasset'
+[2016.08.20-01.10.56:073][736]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Game/FlyingBP/Blueprints/FlyingPawn_Auto4.uasset
+[2016.08.20-01.10.56:073][736]LogFileHelpers: Auto-saving content packages took 0.240
+[2016.08.20-01.14.27:868][480]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FlyingBP/Blueprints/FlyingPawn" FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset" SILENT=true
+[2016.08.20-01.14.28:071][480]LogSavePackage: Save=199.75ms
+[2016.08.20-01.14.28:071][480]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/FlyingPawnDAD14C734736806D99EAD3AAC4F52A14.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset'
+[2016.08.20-01.14.28:073][480]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset
+[2016.08.20-01.14.38:502][555]Cmd: QUIT_EDITOR
+[2016.08.20-01.14.39:115][555]LogExit: Preparing to exit.
+[2016.08.20-01.14.41:015][555]LogExit: Editor shut down
+[2016.08.20-01.14.41:016][555]LogExit: Transaction tracking system shut down
+[2016.08.20-01.14.43:503][555]LogObj: Freed 0b from 0 cluster array pools.
+[2016.08.20-01.14.43:503][555]LogExit: Object subsystem successfully closed.
+[2016.08.20-01.14.43:790][555]LogD3D11RHI: Shutdown
+[2016.08.20-01.14.43:797][555]LogD3D11RHI: CleanupD3DDevice
+[2016.08.20-01.14.43:966][555]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.08.20-01.14.45:317][555]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (218)
+[2016.08.20-01.14.45:334][555]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (217)
+[2016.08.20-01.14.45:334][555]LogModuleManager: Shutting down and abandoning module BlueprintGraph (216)
+[2016.08.20-01.14.45:348][555]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (215)
+[2016.08.20-01.14.45:349][555]LogModuleManager: Shutting down and abandoning module NewLevelDialog (214)
+[2016.08.20-01.14.45:349][555]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (213)
+[2016.08.20-01.14.45:363][555]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
+[2016.08.20-01.14.45:363][555]LogModuleManager: Shutting down and abandoning module SceneOutliner (211)
+[2016.08.20-01.14.45:363][555]LogModuleManager: Shutting down and abandoning module WidgetCarousel (210)
+[2016.08.20-01.14.45:378][555]LogModuleManager: Shutting down and abandoning module AddContentDialog (209)
+[2016.08.20-01.14.45:449][555]LogModuleManager: Shutting down and abandoning module GameplayTags (208)
+[2016.08.20-01.14.45:449][555]LogModuleManager: Shutting down and abandoning module EditorWidgets (207)
+[2016.08.20-01.14.45:449][555]LogModuleManager: Shutting down and abandoning module CollectionManager (206)
+[2016.08.20-01.14.45:472][555]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
+[2016.08.20-01.14.45:530][555]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
+[2016.08.20-01.14.45:530][555]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
+[2016.08.20-01.14.45:546][555]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
+[2016.08.20-01.14.45:546][555]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
+[2016.08.20-01.14.45:546][555]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
+[2016.08.20-01.14.45:546][555]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
+[2016.08.20-01.14.45:546][555]LogModuleManager: Shutting down and abandoning module BspMode (198)
+[2016.08.20-01.14.45:574][555]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
+[2016.08.20-01.14.45:574][555]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
+[2016.08.20-01.14.45:574][555]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
+[2016.08.20-01.14.45:586][555]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
+[2016.08.20-01.14.45:586][555]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
+[2016.08.20-01.14.45:586][555]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
+[2016.08.20-01.14.45:606][555]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
+[2016.08.20-01.14.45:655][555]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
+[2016.08.20-01.14.45:656][555]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
+[2016.08.20-01.14.45:656][555]LogModuleManager: Shutting down and abandoning module SessionServices (188)
+[2016.08.20-01.14.45:656][555]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2016.08.20-01.14.45:656][555]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2016.08.20-01.14.45:694][555]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2016.08.20-01.14.45:882][555]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2016.08.20-01.14.45:951][555]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2016.08.20-01.14.45:951][555]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2016.08.20-01.14.45:993][555]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2016.08.20-01.14.45:993][555]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2016.08.20-01.14.46:845][555]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2016.08.20-01.14.46:876][555]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2016.08.20-01.14.46:876][555]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2016.08.20-01.14.46:876][555]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2016.08.20-01.14.46:898][555]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2016.08.20-01.14.46:898][555]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2016.08.20-01.14.46:918][555]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2016.08.20-01.14.46:935][555]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2016.08.20-01.14.46:957][555]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2016.08.20-01.14.46:977][555]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2016.08.20-01.14.47:005][555]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2016.08.20-01.14.47:025][555]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2016.08.20-01.14.47:045][555]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2016.08.20-01.14.47:045][555]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2016.08.20-01.14.47:071][555]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2016.08.20-01.14.47:085][555]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2016.08.20-01.14.47:092][555]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2016.08.20-01.14.47:092][555]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2016.08.20-01.14.47:145][555]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2016.08.20-01.14.47:145][555]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2016.08.20-01.14.47:145][555]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2016.08.20-01.14.47:168][555]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2016.08.20-01.14.47:198][555]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2016.08.20-01.14.47:230][555]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2016.08.20-01.14.47:230][555]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2016.08.20-01.14.47:313][555]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2016.08.20-01.14.47:339][555]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2016.08.20-01.14.47:364][555]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2016.08.20-01.14.47:385][555]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2016.08.20-01.14.47:385][555]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2016.08.20-01.14.47:396][555]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2016.08.20-01.14.47:396][555]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2016.08.20-01.14.47:425][555]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2016.08.20-01.14.47:425][555]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2016.08.20-01.14.47:425][555]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2016.08.20-01.14.47:426][555]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2016.08.20-01.14.47:445][555]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2016.08.20-01.14.47:477][555]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2016.08.20-01.14.47:509][555]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2016.08.20-01.14.47:517][555]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2016.08.20-01.14.47:562][555]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2016.08.20-01.14.47:562][555]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2016.08.20-01.14.47:562][555]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2016.08.20-01.14.47:562][555]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2016.08.20-01.14.47:562][555]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2016.08.20-01.14.47:562][555]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2016.08.20-01.14.47:562][555]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2016.08.20-01.14.47:562][555]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2016.08.20-01.14.47:562][555]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2016.08.20-01.14.47:578][555]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2016.08.20-01.14.47:578][555]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2016.08.20-01.14.47:796][555]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2016.08.20-01.14.47:834][555]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2016.08.20-01.14.47:834][555]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2016.08.20-01.14.47:834][555]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2016.08.20-01.14.47:834][555]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2016.08.20-01.14.47:834][555]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2016.08.20-01.14.47:834][555]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2016.08.20-01.14.47:834][555]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2016.08.20-01.14.47:844][555]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2016.08.20-01.14.47:844][555]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2016.08.20-01.14.47:844][555]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2016.08.20-01.14.47:923][555]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2016.08.20-01.14.47:923][555]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2016.08.20-01.14.47:923][555]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2016.08.20-01.14.47:923][555]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.08.20-01.14.47:923][555]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.08.20-01.14.48:052][555]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.08.20-01.14.48:052][555]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.08.20-01.14.48:077][555]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.08.20-01.14.48:077][555]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.08.20-01.14.48:077][555]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.08.20-01.14.48:101][555]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.08.20-01.14.48:172][555]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.08.20-01.14.48:203][555]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.08.20-01.14.48:233][555]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.08.20-01.14.48:233][555]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.08.20-01.14.48:253][555]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.08.20-01.14.48:253][555]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.08.20-01.14.48:272][555]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2016.08.20-01.14.48:292][555]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.08.20-01.14.48:304][555]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.08.20-01.14.48:340][555]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.08.20-01.14.48:392][555]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2016.08.20-01.14.48:393][555]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2016.08.20-01.14.48:411][555]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2016.08.20-01.14.48:511][555]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2016.08.20-01.14.48:511][555]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2016.08.20-01.14.48:538][555]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2016.08.20-01.14.48:538][555]LogModuleManager: Shutting down and abandoning module Media (90)
+[2016.08.20-01.14.48:538][555]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2016.08.20-01.14.48:596][555]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2016.08.20-01.14.48:596][555]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2016.08.20-01.14.48:596][555]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2016.08.20-01.14.48:596][555]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2016.08.20-01.14.48:596][555]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2016.08.20-01.14.48:617][555]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.08.20-01.14.48:618][555]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.08.20-01.14.48:618][555]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.08.20-01.14.48:667][555]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.08.20-01.14.48:667][555]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.08.20-01.14.48:710][555]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2016.08.20-01.14.48:759][555]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.08.20-01.14.48:759][555]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.08.20-01.14.48:759][555]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.08.20-01.14.48:781][555]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.08.20-01.14.48:819][555]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.08.20-01.14.48:865][555]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.08.20-01.14.48:928][555]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.08.20-01.14.48:928][555]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.08.20-01.14.48:937][555]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2016.08.20-01.14.48:937][555]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2016.08.20-01.14.48:937][555]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2016.08.20-01.14.48:937][555]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2016.08.20-01.14.48:937][555]LogModuleManager: Shutting down and abandoning module Core (64)
+[2016.08.20-01.14.48:937][555]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2016.08.20-01.14.48:937][555]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2016.08.20-01.14.49:111][555]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.08.20-01.14.49:112][555]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.08.20-01.14.49:112][555]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.08.20-01.14.49:170][555]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.08.20-01.14.49:273][555]LogDerivedDataCache: Shutdown
+[2016.08.20-01.14.49:273][555]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2016.08.20-01.14.49:286][555]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.08.20-01.14.49:344][555]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.08.20-01.14.49:344][555]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.08.20-01.14.49:382][555]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.08.20-01.14.49:382][555]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.08.20-01.14.49:382][555]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.08.20-01.14.49:382][555]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.08.20-01.14.49:382][555]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.08.20-01.14.49:382][555]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.08.20-01.14.49:382][555]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.08.20-01.14.49:382][555]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.08.20-01.14.49:391][555]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.08.20-01.14.49:391][555]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.08.20-01.14.49:391][555]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.08.20-01.14.49:391][555]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.08.20-01.14.49:391][555]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.08.20-01.14.49:391][555]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.08.20-01.14.49:391][555]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.08.20-01.14.49:391][555]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.08.20-01.14.49:391][555]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.08.20-01.14.49:391][555]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.08.20-01.14.49:391][555]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.08.20-01.14.49:403][555]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.08.20-01.14.49:403][555]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.08.20-01.14.49:403][555]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.08.20-01.14.49:403][555]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.08.20-01.14.49:403][555]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.08.20-01.14.49:403][555]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.08.20-01.14.49:403][555]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.08.20-01.14.49:403][555]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.08.20-01.14.49:403][555]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.08.20-01.14.49:404][555]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.08.20-01.14.49:404][555]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.08.20-01.14.49:404][555]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.08.20-01.14.49:408][555]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.08.20-01.14.49:408][555]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.08.20-01.14.49:408][555]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.08.20-01.14.49:428][555]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.08.20-01.14.53:948][555]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.08.20-01.14.53:968][555]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.08.20-01.14.53:995][555]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.08.20-01.14.53:995][555]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.08.20-01.14.54:010][555]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.08.20-01.14.54:010][555]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.08.20-01.14.54:010][555]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.08.20-01.14.54:053][555]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.08.20-01.14.54:075][555]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.08.20-01.14.54:075][555]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.08.20-01.14.54:075][555]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.08.20-01.14.54:075][555]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.08.20-01.14.54:075][555]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.08.20-01.14.54:075][555]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.08.20-01.14.54:113][555]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.08.20-01.14.54:113][555]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.08.20-01.14.54:131][555]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.08.20-01.14.54:178][555]LogExit: Exiting.
+[2016.08.20-01.14.54:190][555]Log file closed, 08/19/16 21:14:54

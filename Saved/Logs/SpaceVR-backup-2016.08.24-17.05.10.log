@@ -1,0 +1,775 @@
+﻿Log file open, 08/21/16 18:10:08
+LogInit:Display: Running engine for game: SpaceVR
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-2143929617) SRandInit(-2143929611).
+LogTaskGraph: Started task graph with 4 named threads and 5 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.049715
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.08.21-22.10.08:619][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.21-22.10.08:619][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.08.21-22.10.08:628][  0]LogInit: Computer: USER-PC
+[2016.08.21-22.10.08:628][  0]LogInit: User: USER
+[2016.08.21-22.10.08:628][  0]LogInit: CPU Page size=65536, Cores=2
+[2016.08.21-22.10.08:628][  0]LogInit: High frequency timer resolution =3.125029 MHz
+[2016.08.21-22.10.08:628][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.08.21-22.10.08:628][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.21-22.10.08:628][  0]LogMemory: Process Physical Memory: 189.63 MB used, 189.63 MB peak
+[2016.08.21-22.10.08:628][  0]LogMemory: Process Virtual Memory: 195.28 MB used, 195.28 MB peak
+[2016.08.21-22.10.08:628][  0]LogMemory: Physical Memory: 3874.94 MB used, 8053.58 MB total
+[2016.08.21-22.10.08:628][  0]LogMemory: Virtual Memory: 520.06 MB used, 8388608.00 MB total
+[2016.08.21-22.10.09:178][  0]LogD3D11RHI: D3D11 adapters:
+[2016.08.21-22.10.09:191][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 770' (Feature Level 11_0)
+[2016.08.21-22.10.09:191][  0]LogD3D11RHI:       1990/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2016.08.21-22.10.09:199][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics' (Feature Level 11_0)
+[2016.08.21-22.10.09:199][  0]LogD3D11RHI:       64/0/1632 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2016.08.21-22.10.09:199][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.08.21-22.10.09:266][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.08.21-22.10.09:266][  0]LogD3D11RHI:     GPU DeviceId: 0x1184 (for the marketing name, search the web for "GPU Device Id")
+[2016.08.21-22.10.09:266][  0]LogWindows: EnumDisplayDevices:
+[2016.08.21-22.10.09:266][  0]LogWindows:    0. 'NVIDIA GeForce GTX 770' (P:1 D:1)
+[2016.08.21-22.10.09:266][  0]LogWindows:    1. 'NVIDIA GeForce GTX 770' (P:0 D:0)
+[2016.08.21-22.10.09:266][  0]LogWindows:    2. 'NVIDIA GeForce GTX 770' (P:0 D:0)
+[2016.08.21-22.10.09:267][  0]LogWindows:    3. 'NVIDIA GeForce GTX 770' (P:0 D:0)
+[2016.08.21-22.10.09:267][  0]LogWindows:    4. 'Intel(R) HD Graphics' (P:0 D:0)
+[2016.08.21-22.10.09:267][  0]LogWindows:    5. 'Intel(R) HD Graphics' (P:0 D:0)
+[2016.08.21-22.10.09:267][  0]LogWindows:    6. 'Intel(R) HD Graphics' (P:0 D:0)
+[2016.08.21-22.10.09:267][  0]LogWindows:    7. 'RDPDD Chained DD' (P:0 D:0)
+[2016.08.21-22.10.09:267][  0]LogWindows:    8. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2016.08.21-22.10.09:267][  0]LogWindows:    9. 'RDP Reflector Display Driver' (P:0 D:0)
+[2016.08.21-22.10.09:267][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2016.08.21-22.10.09:267][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 770
+[2016.08.21-22.10.09:267][  0]LogD3D11RHI:   Driver Version: 353.06 (internal:9.18.13.5306, unified:353.06)
+[2016.08.21-22.10.09:267][  0]LogD3D11RHI:      Driver Date: 5-27-2015
+[2016.08.21-22.10.09:267][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.08.21-22.10.09:273][  0]LogD3D11RHI: Async texture creation enabled
+[2016.08.21-22.10.09:287][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2016.08.21-22.10.09:287][  0]LogShaderCompilers: Guid format shader working directory is -17 characters bigger than the processId version (../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Intermediate/Shaders/WorkingDirectory/7052/).
+[2016.08.21-22.10.09:287][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/USER/AppData/Local/Temp/UnrealShaderWorkingDir/767F044F49AD0234B8AAD2989F9F743B/'.
+[2016.08.21-22.10.09:287][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.08.21-22.10.12:472][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.08.21-22.10.12:481][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.08.21-22.10.12:489][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.08.21-22.10.12:498][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.08.21-22.10.12:507][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.08.21-22.10.12:515][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.08.21-22.10.12:523][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.08.21-22.10.12:535][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.08.21-22.10.12:542][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.08.21-22.10.12:550][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.08.21-22.10.12:557][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.08.21-22.10.12:572][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.08.21-22.10.12:572][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.08.21-22.10.12:573][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.08.21-22.10.12:593][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.08.21-22.10.12:601][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.08.21-22.10.12:608][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.08.21-22.10.12:616][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.08.21-22.10.12:623][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.08.21-22.10.12:623][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.08.21-22.10.12:682][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.08.21-22.10.12:733][  0]LogDerivedDataCache: Loaded boot cache 0.05s 49MB C:/Users/USER/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.08.21-22.10.12:733][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/USER/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.08.21-22.10.12:733][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.08.21-22.10.12:733][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.08.21-22.10.12:733][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.08.21-22.10.12:733][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.08.21-22.10.12:750][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.08.21-22.10.12:761][  0]LogDerivedDataCache: Using Local data cache path C:/Users/USER/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.08.21-22.10.12:927][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.21-22.10.12:927][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.08.21-22.10.13:081][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.08.21-22.10.13:081][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.08.21-22.10.13:081][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.08.21-22.10.13:328][  0]LogAssetRegistry: FAssetRegistry took 0.0196 seconds to start up
+[2016.08.21-22.10.13:339][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.008789 seconds
+[2016.08.21-22.10.13:346][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.08.21-22.10.13:346][  0]LogUObjectAllocator: 5855632 out of 0 bytes used by permanent object pool.
+[2016.08.21-22.10.13:346][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.08.21-22.10.13:353][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.08.21-22.10.13:611][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.21-22.10.13:611][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.21-22.10.14:331][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.08.21-22.10.14:577][  0]SourceControl: Info Source control is disabled
+[2016.08.21-22.10.14:917][  0]SourceControl: Info Source control is disabled
+[2016.08.21-22.10.14:924][  0]SourceControl: Info Source control is disabled
+[2016.08.21-22.10.14:938][  0]SourceControl: Info Source control is disabled
+[2016.08.21-22.10.15:117][  0]LogEngine: Initializing Engine...
+[2016.08.21-22.10.15:118][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.08.21-22.10.15:118][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.08.21-22.10.15:281][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.08.21-22.10.15:324][  0]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-22.10.15:331][  0]LogInit: FAudioDevice initialized.
+[2016.08.21-22.10.15:363][  0]LogDerivedDataCache: Saved boot cache 0.03s 48MB C:/Users/USER/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.08.21-22.10.15:367][  0]LogInit: Texture streaming: Enabled
+[2016.08.21-22.10.15:398][  0]LogInit: Transaction tracking system initialized
+[2016.08.21-22.10.15:418][  0]BlueprintLog: New page: Editor Load
+[2016.08.21-22.10.15:492][  0]LocalizationService: Info Localization service is disabled
+[2016.08.21-22.10.15:778][  0]LogConsoleResponse:Display: 
+[2016.08.21-22.10.16:050][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.08.21-22.10.16:050][  0]LogCook:Display: Mobile HDR setting 1
+[2016.08.21-22.10.16:137][  0]LogFileCache: Scanning file cache for directory 'C:/Users/USER/Documents/Unreal Projects/SpaceVR/Content/' took 0.02s
+[2016.08.21-22.10.16:137][  0]SourceControl: Info Source control is disabled
+[2016.08.21-22.10.16:137][  0]Cmd: MAP LOAD FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Maps/FlyingExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.08.21-22.10.16:137][  0]LightingResults: New page: Lighting Build
+[2016.08.21-22.10.16:140][  0]MapCheck: New page: Map Check
+[2016.08.21-22.10.16:140][  0]LightingResults: New page: Lighting Build
+[2016.08.21-22.10.17:032][  0]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2016.08.21-22.10.17:049][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.08.21-22.10.17:050][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.08.21-22.10.17:081][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 30.51ms to complete.
+[2016.08.21-22.10.17:081][  0]LogFileHelpers: Loading map 'FlyingExampleMap' took 0.944
+[2016.08.21-22.10.17:302][  0]LogCollectionManager: Loaded 0 collections in 0.002371 seconds
+[2016.08.21-22.10.17:365][  0]LogFileCache: Scanning file cache for directory 'C:/Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Collections/' took 0.02s
+[2016.08.21-22.10.17:366][  0]LogFileCache: Scanning file cache for directory 'C:/Users/USER/Documents/Unreal Projects/SpaceVR/Content/Developers/USER/Collections/' took 0.00s
+[2016.08.21-22.10.17:366][  0]LogFileCache: Scanning file cache for directory 'C:/Users/USER/Documents/Unreal Projects/SpaceVR/Content/Collections/' took 0.00s
+[2016.08.21-22.10.17:366][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2016.08.21-22.10.17:374][  0]LogContentBrowser: Native class hierarchy populated in 0.0080 seconds. Added 2047 classes and 369 folders.
+[2016.08.21-22.10.17:378][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.08.21-22.10.17:378][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.08.21-22.10.17:379][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0004 seconds. Added 12 classes and 0 folders.
+[2016.08.21-22.10.17:384][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.08.21-22.10.17:438][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2016.08.21-22.10.17:443][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2016.08.21-22.10.17:548][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.08.21-22.10.17:556][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.08.21-22.10.17:603][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2016.08.21-22.10.17:603][  0]LogLoad: Full Startup: 9.50 seconds (BP compile: 0.17 seconds)
+[2016.08.21-22.10.17:603][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.08.21-22.10.17:603][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.08.21-22.10.17:613][  0]LogOcInput: OculusInput pre-init called
+[2016.08.21-22.10.17:632][  0]LogContentStreaming: Texture pool size now 200 MB
+[2016.08.21-22.10.17:806][  0]LogRenderer: Reallocating scene render targets to support 1060x576 (Frame:2).
+[2016.08.21-22.10.17:973][  1]LogAssetRegistry: Asset discovery search completed in 4.6648 seconds
+[2016.08.21-22.10.17:973][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.08.21-22.10.17:973][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000026 seconds (updated 0 objects)
+[2016.08.21-22.14.42:618][387]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-22.14.42:659][387]Cmd: MAP LOAD FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/NewMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.08.21-22.14.42:659][387]LightingResults: New page: Lighting Build
+[2016.08.21-22.14.42:660][387]LoadErrors: New page: Loading map: NewMap.umap
+[2016.08.21-22.14.42:667][387]MapCheck: New page: Map Check
+[2016.08.21-22.14.42:667][387]LightingResults: New page: Lighting Build
+[2016.08.21-22.14.42:730][387]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.08.21-22.14.42:752][387]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.08.21-22.14.42:782][387]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 29.28ms to complete.
+[2016.08.21-22.14.42:782][387]LogFileHelpers: Loading map 'NewMap' took 0.123
+[2016.08.21-22.15.42:672][303]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.15.42:672][303]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-22.15.42:672][303]PIE: New page: PIE session: NewMap (Aug 21, 2016, 1:15:42 PM)
+[2016.08.21-22.15.42:672][303]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-22.15.42:677][303]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004419s)
+[2016.08.21-22.15.42:677][303]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-22.15.42:677][303]LogPlayLevel: PIE: World Init took: (0.000640s)
+[2016.08.21-22.15.42:677][303]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.005272s)
+[2016.08.21-22.15.42:733][303]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-22.15.42:739][303]LogInit: FAudioDevice initialized.
+[2016.08.21-22.15.42:799][303]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-22.15.42:802][303]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-18.15.42
+[2016.08.21-22.15.42:802][303]LogWorld: Bringing up level for play took: 0.002489
+[2016.08.21-22.15.42:806][303]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 11 classes and 0 folders.
+[2016.08.21-22.15.42:806][303]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap 1.11
+[2016.08.21-22.15.42:806][303]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.03:447][773]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.03:494][773]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.13:221][899]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.13:221][899]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-22.16.13:221][899]PIE: New page: PIE session: NewMap (Aug 21, 2016, 1:16:13 PM)
+[2016.08.21-22.16.13:221][899]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-22.16.13:225][899]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003882s)
+[2016.08.21-22.16.13:226][899]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-22.16.13:226][899]LogPlayLevel: PIE: World Init took: (0.000743s)
+[2016.08.21-22.16.13:226][899]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.004822s)
+[2016.08.21-22.16.13:305][899]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-22.16.13:310][899]LogInit: FAudioDevice initialized.
+[2016.08.21-22.16.13:356][899]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-22.16.13:358][899]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-18.16.13
+[2016.08.21-22.16.13:358][899]LogWorld: Bringing up level for play took: 0.002416
+[2016.08.21-22.16.13:359][899]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap -0.336
+[2016.08.21-22.16.13:360][899]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.14:244][  4]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.14:282][  4]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.20:484][687]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 111 classes and 0 folders.
+[2016.08.21-22.16.31:458][238]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.21-22.16.31:702][238]BlueprintEditorCompileResults: Info [0383.60] Compile of FlyingPawn successful! [in 243 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.21-22.16.33:279][356]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.33:279][356]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-22.16.33:280][356]PIE: New page: PIE session: NewMap (Aug 21, 2016, 1:16:33 PM)
+[2016.08.21-22.16.33:280][356]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-22.16.33:284][356]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004361s)
+[2016.08.21-22.16.33:285][356]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-22.16.33:285][356]LogPlayLevel: PIE: World Init took: (0.000590s)
+[2016.08.21-22.16.33:285][356]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.005164s)
+[2016.08.21-22.16.33:380][356]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-22.16.33:386][356]LogInit: FAudioDevice initialized.
+[2016.08.21-22.16.33:435][356]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-22.16.33:437][356]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-18.16.33
+[2016.08.21-22.16.33:438][356]LogWorld: Bringing up level for play took: 0.002415
+[2016.08.21-22.16.33:439][356]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap -0.258
+[2016.08.21-22.16.33:439][356]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.34:914][532]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.34:952][532]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.43:045][ 13]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.21-22.16.43:275][ 13]BlueprintEditorCompileResults: Info [0395.17] Compile of FlyingPawn successful! [in 230 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.21-22.16.44:966][152]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.44:966][152]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-22.16.44:966][152]PIE: New page: PIE session: NewMap (Aug 21, 2016, 1:16:44 PM)
+[2016.08.21-22.16.44:966][152]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-22.16.44:970][152]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003896s)
+[2016.08.21-22.16.44:970][152]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-22.16.44:971][152]LogPlayLevel: PIE: World Init took: (0.000595s)
+[2016.08.21-22.16.44:971][152]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.004691s)
+[2016.08.21-22.16.45:064][152]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-22.16.45:069][152]LogInit: FAudioDevice initialized.
+[2016.08.21-22.16.45:115][152]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-22.16.45:117][152]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-18.16.45
+[2016.08.21-22.16.45:117][152]LogWorld: Bringing up level for play took: 0.002213
+[2016.08.21-22.16.45:118][152]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap -0.578
+[2016.08.21-22.16.45:118][152]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.46:447][310]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.46:484][310]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.55:028][842]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.21-22.16.55:264][842]BlueprintEditorCompileResults: Info [0407.16] Compile of FlyingPawn successful! [in 236 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.21-22.16.56:914][970]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.56:914][970]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-22.16.56:914][970]PIE: New page: PIE session: NewMap (Aug 21, 2016, 1:16:56 PM)
+[2016.08.21-22.16.56:914][970]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-22.16.56:917][970]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003333s)
+[2016.08.21-22.16.56:918][970]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-22.16.56:918][970]LogPlayLevel: PIE: World Init took: (0.000604s)
+[2016.08.21-22.16.56:918][970]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.004141s)
+[2016.08.21-22.16.57:015][970]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-22.16.57:021][970]LogInit: FAudioDevice initialized.
+[2016.08.21-22.16.57:070][970]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-22.16.57:072][970]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-18.16.57
+[2016.08.21-22.16.57:072][970]LogWorld: Bringing up level for play took: 0.002339
+[2016.08.21-22.16.57:073][970]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap -0.623
+[2016.08.21-22.16.57:073][970]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.59:098][211]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.16.59:138][211]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.17.29:773][186]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.21-22.17.30:027][186]BlueprintEditorCompileResults: Info [0441.92] Compile of FlyingPawn successful! [in 254 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.21-22.17.31:884][338]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.17.31:884][338]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-22.17.31:884][338]PIE: New page: PIE session: NewMap (Aug 21, 2016, 1:17:31 PM)
+[2016.08.21-22.17.31:884][338]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-22.17.31:888][338]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003520s)
+[2016.08.21-22.17.31:888][338]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-22.17.31:888][338]LogPlayLevel: PIE: World Init took: (0.000618s)
+[2016.08.21-22.17.31:889][338]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.004342s)
+[2016.08.21-22.17.31:981][338]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-22.17.31:986][338]LogInit: FAudioDevice initialized.
+[2016.08.21-22.17.32:031][338]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-22.17.32:033][338]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-18.17.32
+[2016.08.21-22.17.32:034][338]LogWorld: Bringing up level for play took: 0.002458
+[2016.08.21-22.17.32:035][338]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap 0.338
+[2016.08.21-22.17.32:035][338]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.17.34:089][583]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.17.34:125][583]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.17.40:454][971]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.21-22.17.40:685][971]BlueprintEditorCompileResults: Info [0452.58] Compile of FlyingPawn successful! [in 231 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.21-22.17.42:361][104]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.17.42:361][104]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-22.17.42:361][104]PIE: New page: PIE session: NewMap (Aug 21, 2016, 1:17:42 PM)
+[2016.08.21-22.17.42:361][104]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-22.17.42:365][104]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004105s)
+[2016.08.21-22.17.42:367][104]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-22.17.42:367][104]LogPlayLevel: PIE: World Init took: (0.001741s)
+[2016.08.21-22.17.42:367][104]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.006050s)
+[2016.08.21-22.17.42:463][104]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-22.17.42:468][104]LogInit: FAudioDevice initialized.
+[2016.08.21-22.17.42:513][104]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-22.17.42:515][104]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-18.17.42
+[2016.08.21-22.17.42:515][104]LogWorld: Bringing up level for play took: 0.002400
+[2016.08.21-22.17.42:516][104]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap 0.819
+[2016.08.21-22.17.42:517][104]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.17.44:726][368]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.17.44:765][368]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.17.59:664][701]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.21-22.17.59:911][701]BlueprintEditorCompileResults: Info [0471.80] Compile of FlyingPawn successful! [in 246 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.21-22.18.01:739][849]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.18.01:739][849]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-22.18.01:739][849]PIE: New page: PIE session: NewMap (Aug 21, 2016, 1:18:01 PM)
+[2016.08.21-22.18.01:739][849]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-22.18.01:743][849]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003947s)
+[2016.08.21-22.18.01:744][849]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-22.18.01:744][849]LogPlayLevel: PIE: World Init took: (0.000632s)
+[2016.08.21-22.18.01:744][849]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.004829s)
+[2016.08.21-22.18.01:838][849]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-22.18.01:843][849]LogInit: FAudioDevice initialized.
+[2016.08.21-22.18.01:887][849]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-22.18.01:890][849]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-18.18.01
+[2016.08.21-22.18.01:890][849]LogWorld: Bringing up level for play took: 0.002414
+[2016.08.21-22.18.01:891][849]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap 0.194
+[2016.08.21-22.18.01:891][849]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.18.03:434][ 33]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.18.03:473][ 33]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.18.04:200][108]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.18.04:200][108]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-22.18.04:200][108]PIE: New page: PIE session: NewMap (Aug 21, 2016, 1:18:04 PM)
+[2016.08.21-22.18.04:200][108]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-22.18.04:205][108]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004423s)
+[2016.08.21-22.18.04:206][108]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-22.18.04:206][108]LogPlayLevel: PIE: World Init took: (0.000752s)
+[2016.08.21-22.18.04:206][108]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.005418s)
+[2016.08.21-22.18.04:302][108]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-22.18.04:307][108]LogInit: FAudioDevice initialized.
+[2016.08.21-22.18.04:355][108]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-22.18.04:358][108]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-18.18.04
+[2016.08.21-22.18.04:358][108]LogWorld: Bringing up level for play took: 0.002477
+[2016.08.21-22.18.04:359][108]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap 0.662
+[2016.08.21-22.18.04:359][108]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.18.05:985][302]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.18.06:021][302]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.18.35:786][ 75]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.21-22.18.36:021][ 75]BlueprintEditorCompileResults: Info [0507.91] Compile of FlyingPawn successful! [in 234 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.21-22.18.50:960][646]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.18.50:960][646]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-22.18.50:960][646]PIE: New page: PIE session: NewMap (Aug 21, 2016, 1:18:50 PM)
+[2016.08.21-22.18.50:960][646]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-22.18.50:964][646]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004076s)
+[2016.08.21-22.18.50:965][646]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-22.18.50:965][646]LogPlayLevel: PIE: World Init took: (0.000902s)
+[2016.08.21-22.18.50:965][646]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.005182s)
+[2016.08.21-22.18.51:061][646]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-22.18.51:067][646]LogInit: FAudioDevice initialized.
+[2016.08.21-22.18.51:117][646]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-22.18.51:119][646]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-18.18.51
+[2016.08.21-22.18.51:120][646]LogWorld: Bringing up level for play took: 0.002440
+[2016.08.21-22.18.51:121][646]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap -0.577
+[2016.08.21-22.18.51:121][646]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.18.53:288][905]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.18.53:328][905]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.18.58:905][246]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.21-22.18.59:140][246]BlueprintEditorCompileResults: Info [0531.03] Compile of FlyingPawn successful! [in 235 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.21-22.19.00:486][344]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.19.00:486][344]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-22.19.00:486][344]PIE: New page: PIE session: NewMap (Aug 21, 2016, 1:19:00 PM)
+[2016.08.21-22.19.00:486][344]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-22.19.00:490][344]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003694s)
+[2016.08.21-22.19.00:490][344]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-22.19.00:491][344]LogPlayLevel: PIE: World Init took: (0.000624s)
+[2016.08.21-22.19.00:491][344]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.004517s)
+[2016.08.21-22.19.00:586][344]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-22.19.00:591][344]LogInit: FAudioDevice initialized.
+[2016.08.21-22.19.00:636][344]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-22.19.00:638][344]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-18.19.00
+[2016.08.21-22.19.00:638][344]LogWorld: Bringing up level for play took: 0.002370
+[2016.08.21-22.19.00:639][344]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap 0.942
+[2016.08.21-22.19.00:639][344]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.19.02:466][562]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.19.02:505][562]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.19.08:450][941]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.21-22.19.08:684][941]BlueprintEditorCompileResults: Info [0540.58] Compile of FlyingPawn successful! [in 234 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.21-22.19.10:314][ 63]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.19.10:314][ 63]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-22.19.10:314][ 63]PIE: New page: PIE session: NewMap (Aug 21, 2016, 1:19:10 PM)
+[2016.08.21-22.19.10:314][ 63]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-22.19.10:318][ 63]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003964s)
+[2016.08.21-22.19.10:319][ 63]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-22.19.10:319][ 63]LogPlayLevel: PIE: World Init took: (0.000601s)
+[2016.08.21-22.19.10:319][ 63]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.004779s)
+[2016.08.21-22.19.10:412][ 63]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-22.19.10:417][ 63]LogInit: FAudioDevice initialized.
+[2016.08.21-22.19.10:462][ 63]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-22.19.10:464][ 63]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-18.19.10
+[2016.08.21-22.19.10:465][ 63]LogWorld: Bringing up level for play took: 0.002444
+[2016.08.21-22.19.10:466][ 63]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap 0.767
+[2016.08.21-22.19.10:466][ 63]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.19.15:699][689]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.19.15:734][689]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.19.24:726][284]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.21-22.19.24:964][284]BlueprintEditorCompileResults: Info [0556.86] Compile of FlyingPawn successful! [in 237 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.21-22.19.26:878][451]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.19.26:878][451]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-22.19.26:878][451]PIE: New page: PIE session: NewMap (Aug 21, 2016, 1:19:26 PM)
+[2016.08.21-22.19.26:878][451]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-22.19.26:883][451]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004714s)
+[2016.08.21-22.19.26:883][451]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-22.19.26:884][451]LogPlayLevel: PIE: World Init took: (0.000594s)
+[2016.08.21-22.19.26:884][451]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.005504s)
+[2016.08.21-22.19.26:978][451]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-22.19.26:983][451]LogInit: FAudioDevice initialized.
+[2016.08.21-22.19.27:033][451]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-22.19.27:035][451]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-18.19.27
+[2016.08.21-22.19.27:035][451]LogWorld: Bringing up level for play took: 0.002273
+[2016.08.21-22.19.27:036][451]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap -0.662
+[2016.08.21-22.19.27:036][451]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.19.28:771][658]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.19.28:812][658]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.19.35:672][ 47]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.21-22.19.35:901][ 47]BlueprintEditorCompileResults: Info [0567.79] Compile of FlyingPawn successful! [in 228 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.21-22.19.37:820][206]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.19.37:820][206]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-22.19.37:820][206]PIE: New page: PIE session: NewMap (Aug 21, 2016, 1:19:37 PM)
+[2016.08.21-22.19.37:820][206]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-22.19.37:824][206]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003708s)
+[2016.08.21-22.19.37:825][206]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-22.19.37:825][206]LogPlayLevel: PIE: World Init took: (0.000953s)
+[2016.08.21-22.19.37:825][206]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.004858s)
+[2016.08.21-22.19.37:918][206]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-22.19.37:922][206]LogInit: FAudioDevice initialized.
+[2016.08.21-22.19.37:973][206]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-22.19.37:975][206]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-18.19.37
+[2016.08.21-22.19.37:975][206]LogWorld: Bringing up level for play took: 0.002238
+[2016.08.21-22.19.37:976][206]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap 0.278
+[2016.08.21-22.19.37:976][206]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.20.08:967][915]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.20.09:006][915]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-22.26.01:402][227]LogSavePackage: Save=112.82ms
+[2016.08.21-22.26.01:402][227]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/NewMap_Auto1BF0F36E144264D692E3CC3873DD4CBAE.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Game/FlyingBP/Blueprints/NewMap_Auto1.umap'
+[2016.08.21-22.26.01:404][227]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Game/FlyingBP/Blueprints/NewMap_Auto1.umap
+[2016.08.21-22.26.01:405][227]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FlyingBP/Blueprints/NewMap' took 0.167
+[2016.08.21-22.26.01:405][227]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.167
+[2016.08.21-22.26.01:409][227]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/FlyingBP/Blueprints/FlyingPawn] ([1] browsable assets)...
+[2016.08.21-22.26.01:432][227]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn]
+[2016.08.21-22.26.01:432][227]OBJ SavePackage: Finished generating thumbnails for package [/Game/FlyingBP/Blueprints/FlyingPawn]
+[2016.08.21-22.26.01:661][227]LogSavePackage: Save=211.21ms
+[2016.08.21-22.26.01:661][227]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/FlyingPawn_Auto1F2B6A2B2449BA668F4F6BF90A5CE78E3.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Game/FlyingBP/Blueprints/FlyingPawn_Auto1.uasset'
+[2016.08.21-22.26.01:662][227]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/Autosaves/Game/FlyingBP/Blueprints/FlyingPawn_Auto1.uasset
+[2016.08.21-22.26.01:662][227]LogFileHelpers: Auto-saving content packages took 0.255
+[2016.08.21-23.52.53:674][794]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.21-23.52.53:924][794]BlueprintEditorCompileResults: Info [6165.76] Compile of FlyingPawn successful! [in 249 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.21-23.52.55:848][937]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.52.55:848][937]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-23.52.55:849][937]PIE: New page: PIE session: NewMap (Aug 21, 2016, 2:52:55 PM)
+[2016.08.21-23.52.55:849][937]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-23.52.55:853][937]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004007s)
+[2016.08.21-23.52.55:853][937]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-23.52.55:854][937]LogPlayLevel: PIE: World Init took: (0.000733s)
+[2016.08.21-23.52.55:854][937]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.004947s)
+[2016.08.21-23.52.55:947][937]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-23.52.55:953][937]LogInit: FAudioDevice initialized.
+[2016.08.21-23.52.56:002][937]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-23.52.56:005][937]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-19.52.56
+[2016.08.21-23.52.56:006][937]LogWorld: Bringing up level for play took: 0.003200
+[2016.08.21-23.52.56:007][937]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap 0.253
+[2016.08.21-23.52.56:007][937]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.52.57:766][143]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.52.57:808][143]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.53.07:959][712]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.21-23.53.08:203][712]BlueprintEditorCompileResults: Info [6180.04] Compile of FlyingPawn successful! [in 243 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.21-23.53.13:345][976]BlueprintLog: New page: Compile FlyingPawn
+[2016.08.21-23.53.13:586][976]BlueprintEditorCompileResults: Info [6185.42] Compile of FlyingPawn successful! [in 240 ms] (/Game/FlyingBP/Blueprints/FlyingPawn.FlyingPawn)
+[2016.08.21-23.53.16:126][157]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.53.16:126][157]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-23.53.16:126][157]PIE: New page: PIE session: NewMap (Aug 21, 2016, 2:53:16 PM)
+[2016.08.21-23.53.16:126][157]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-23.53.16:130][157]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004620s)
+[2016.08.21-23.53.16:132][157]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-23.53.16:132][157]LogPlayLevel: PIE: World Init took: (0.001488s)
+[2016.08.21-23.53.16:132][157]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.006298s)
+[2016.08.21-23.53.16:230][157]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-23.53.16:235][157]LogInit: FAudioDevice initialized.
+[2016.08.21-23.53.16:284][157]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-23.53.16:287][157]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-19.53.16
+[2016.08.21-23.53.16:287][157]LogWorld: Bringing up level for play took: 0.002650
+[2016.08.21-23.53.16:288][157]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap 0.533
+[2016.08.21-23.53.16:288][157]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.53.37:899][729]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.53.37:940][729]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.53.52:840][173]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.53.52:841][173]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-23.53.52:841][173]PIE: New page: PIE session: NewMap (Aug 21, 2016, 2:53:52 PM)
+[2016.08.21-23.53.52:841][173]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-23.53.52:844][173]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003712s)
+[2016.08.21-23.53.52:845][173]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-23.53.52:845][173]LogPlayLevel: PIE: World Init took: (0.000599s)
+[2016.08.21-23.53.52:845][173]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.004512s)
+[2016.08.21-23.53.52:940][173]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-23.53.52:945][173]LogInit: FAudioDevice initialized.
+[2016.08.21-23.53.52:995][173]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-23.53.52:997][173]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-19.53.52
+[2016.08.21-23.53.52:998][173]LogWorld: Bringing up level for play took: 0.002659
+[2016.08.21-23.53.52:999][173]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap -0.756
+[2016.08.21-23.53.52:999][173]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.54.25:425][ 45]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.54.25:461][ 45]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.54.26:592][166]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.54.26:592][166]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.21-23.54.26:592][166]PIE: New page: PIE session: NewMap (Aug 21, 2016, 2:54:26 PM)
+[2016.08.21-23.54.26:592][166]LogPlayLevel: Creating play world package: /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap
+[2016.08.21-23.54.26:596][166]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003563s)
+[2016.08.21-23.54.26:596][166]LogAIModule: Creating AISystem for world NewMap
+[2016.08.21-23.54.26:596][166]LogPlayLevel: PIE: World Init took: (0.000611s)
+[2016.08.21-23.54.26:596][166]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingBP/Blueprints/NewMap.NewMap to /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap (0.004369s)
+[2016.08.21-23.54.26:691][166]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-23.54.26:696][166]LogInit: FAudioDevice initialized.
+[2016.08.21-23.54.26:744][166]LogWorld: Game class is 'FlyingGameMode_C'
+[2016.08.21-23.54.26:747][166]LogWorld: Bringing World /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2016.08.21-19.54.26
+[2016.08.21-23.54.26:748][166]LogWorld: Bringing up level for play took: 0.002872
+[2016.08.21-23.54.26:749][166]PIE: Info Play in editor start time for /Game/FlyingBP/Blueprints/UEDPIE_0_NewMap 0.993
+[2016.08.21-23.54.26:749][166]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.55.04:481][487]Cmd: SELECT NONE
+[2016.08.21-23.55.06:297][652]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.55.06:375][652]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel' has LevelScriptBlueprint '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap' with GeneratedClass '/Game/FlyingBP/Blueprints/NewMap.NewMap_C' with ClassGeneratedBy '/Game/FlyingBP/Blueprints/NewMap.NewMap:PersistentLevel.NewMap'
+[2016.08.21-23.55.13:320][289]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FlyingBP/Blueprints/FlyingPawn" FILE="../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset" SILENT=true
+[2016.08.21-23.55.13:569][289]LogSavePackage: Save=221.42ms
+[2016.08.21-23.55.13:569][289]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/FlyingPawnC0F985AC4BAA82B447FD6A8AD3B47800.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset'
+[2016.08.21-23.55.13:571][289]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/FlyingPawn.uasset
+[2016.08.21-23.55.13:798][289]LogSavePackage: Save=145.53ms
+[2016.08.21-23.55.13:798][289]LogSavePackage: Moving '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Saved/NewMap8460034F412D4770E924CCB712FA6A43.tmp' to '../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/NewMap.umap'
+[2016.08.21-23.55.13:800][289]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/USER/Documents/Unreal Projects/SpaceVR/Content/FlyingBP/Blueprints/NewMap.umap
+[2016.08.21-23.55.13:822][289]LogFileHelpers: Saving map 'NewMap' took 0.248
+[2016.08.21-23.55.14:479][290]Cmd: QUIT_EDITOR
+[2016.08.21-23.55.15:059][290]LogExit: Preparing to exit.
+[2016.08.21-23.55.16:601][290]LogExit: Editor shut down
+[2016.08.21-23.55.16:602][290]LogExit: Transaction tracking system shut down
+[2016.08.21-23.55.19:469][290]LogObj: Freed 0b from 0 cluster array pools.
+[2016.08.21-23.55.19:469][290]LogExit: Object subsystem successfully closed.
+[2016.08.21-23.55.19:782][290]LogD3D11RHI: Shutdown
+[2016.08.21-23.55.19:789][290]LogD3D11RHI: CleanupD3DDevice
+[2016.08.21-23.55.19:971][290]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.08.21-23.55.21:442][290]LogModuleManager: Shutting down and abandoning module BlueprintGraph (215)
+[2016.08.21-23.55.21:458][290]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (214)
+[2016.08.21-23.55.21:458][290]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (213)
+[2016.08.21-23.55.21:470][290]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
+[2016.08.21-23.55.21:470][290]LogModuleManager: Shutting down and abandoning module SceneOutliner (211)
+[2016.08.21-23.55.21:470][290]LogModuleManager: Shutting down and abandoning module WidgetCarousel (210)
+[2016.08.21-23.55.21:499][290]LogModuleManager: Shutting down and abandoning module AddContentDialog (209)
+[2016.08.21-23.55.21:554][290]LogModuleManager: Shutting down and abandoning module GameplayTags (208)
+[2016.08.21-23.55.21:554][290]LogModuleManager: Shutting down and abandoning module EditorWidgets (207)
+[2016.08.21-23.55.21:554][290]LogModuleManager: Shutting down and abandoning module CollectionManager (206)
+[2016.08.21-23.55.21:586][290]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
+[2016.08.21-23.55.21:633][290]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
+[2016.08.21-23.55.21:644][290]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
+[2016.08.21-23.55.21:671][290]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
+[2016.08.21-23.55.21:671][290]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
+[2016.08.21-23.55.21:671][290]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
+[2016.08.21-23.55.21:671][290]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
+[2016.08.21-23.55.21:671][290]LogModuleManager: Shutting down and abandoning module BspMode (198)
+[2016.08.21-23.55.21:695][290]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
+[2016.08.21-23.55.21:695][290]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
+[2016.08.21-23.55.21:695][290]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
+[2016.08.21-23.55.21:707][290]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
+[2016.08.21-23.55.21:707][290]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
+[2016.08.21-23.55.21:707][290]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
+[2016.08.21-23.55.21:730][290]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
+[2016.08.21-23.55.21:821][290]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
+[2016.08.21-23.55.21:821][290]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
+[2016.08.21-23.55.21:821][290]LogModuleManager: Shutting down and abandoning module SessionServices (188)
+[2016.08.21-23.55.21:821][290]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2016.08.21-23.55.21:821][290]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2016.08.21-23.55.21:822][290]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2016.08.21-23.55.21:927][290]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2016.08.21-23.55.21:934][290]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2016.08.21-23.55.21:934][290]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2016.08.21-23.55.21:961][290]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2016.08.21-23.55.21:961][290]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2016.08.21-23.55.22:935][290]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2016.08.21-23.55.22:959][290]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2016.08.21-23.55.22:959][290]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2016.08.21-23.55.22:959][290]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2016.08.21-23.55.22:980][290]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2016.08.21-23.55.22:980][290]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2016.08.21-23.55.23:025][290]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2016.08.21-23.55.23:047][290]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2016.08.21-23.55.23:102][290]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2016.08.21-23.55.23:210][290]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2016.08.21-23.55.23:230][290]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2016.08.21-23.55.23:340][290]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2016.08.21-23.55.23:344][290]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2016.08.21-23.55.23:344][290]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2016.08.21-23.55.23:438][290]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2016.08.21-23.55.23:460][290]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2016.08.21-23.55.23:535][290]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2016.08.21-23.55.23:535][290]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2016.08.21-23.55.23:589][290]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2016.08.21-23.55.23:589][290]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2016.08.21-23.55.23:626][290]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2016.08.21-23.55.23:646][290]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2016.08.21-23.55.23:680][290]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2016.08.21-23.55.23:717][290]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2016.08.21-23.55.23:725][290]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2016.08.21-23.55.23:809][290]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2016.08.21-23.55.23:833][290]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2016.08.21-23.55.23:867][290]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2016.08.21-23.55.23:903][290]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2016.08.21-23.55.23:903][290]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2016.08.21-23.55.23:928][290]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2016.08.21-23.55.23:928][290]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2016.08.21-23.55.24:013][290]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2016.08.21-23.55.24:013][290]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2016.08.21-23.55.24:013][290]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2016.08.21-23.55.24:040][290]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2016.08.21-23.55.24:054][290]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2016.08.21-23.55.24:087][290]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2016.08.21-23.55.24:145][290]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2016.08.21-23.55.24:171][290]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2016.08.21-23.55.24:229][290]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2016.08.21-23.55.24:229][290]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2016.08.21-23.55.24:229][290]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2016.08.21-23.55.24:229][290]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2016.08.21-23.55.24:229][290]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2016.08.21-23.55.24:229][290]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2016.08.21-23.55.24:229][290]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2016.08.21-23.55.24:229][290]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2016.08.21-23.55.24:229][290]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2016.08.21-23.55.24:254][290]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2016.08.21-23.55.24:254][290]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2016.08.21-23.55.24:489][290]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2016.08.21-23.55.24:509][290]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2016.08.21-23.55.24:509][290]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2016.08.21-23.55.24:509][290]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2016.08.21-23.55.24:509][290]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2016.08.21-23.55.24:509][290]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2016.08.21-23.55.24:509][290]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2016.08.21-23.55.24:509][290]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2016.08.21-23.55.24:527][290]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2016.08.21-23.55.24:527][290]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2016.08.21-23.55.24:527][290]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2016.08.21-23.55.24:559][290]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2016.08.21-23.55.24:559][290]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2016.08.21-23.55.24:559][290]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2016.08.21-23.55.24:559][290]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.08.21-23.55.24:559][290]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.08.21-23.55.24:586][290]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.08.21-23.55.24:586][290]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.08.21-23.55.24:610][290]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.08.21-23.55.24:610][290]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.08.21-23.55.24:610][290]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.08.21-23.55.24:639][290]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.08.21-23.55.24:694][290]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.08.21-23.55.24:726][290]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.08.21-23.55.24:752][290]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.08.21-23.55.24:752][290]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.08.21-23.55.24:771][290]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.08.21-23.55.24:771][290]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.08.21-23.55.24:786][290]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2016.08.21-23.55.24:814][290]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.08.21-23.55.24:835][290]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.08.21-23.55.24:851][290]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.08.21-23.55.24:872][290]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2016.08.21-23.55.24:872][290]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2016.08.21-23.55.24:897][290]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2016.08.21-23.55.24:997][290]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2016.08.21-23.55.24:997][290]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2016.08.21-23.55.25:009][290]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2016.08.21-23.55.25:010][290]LogModuleManager: Shutting down and abandoning module Media (90)
+[2016.08.21-23.55.25:010][290]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2016.08.21-23.55.25:053][290]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2016.08.21-23.55.25:053][290]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2016.08.21-23.55.25:053][290]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2016.08.21-23.55.25:053][290]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2016.08.21-23.55.25:053][290]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2016.08.21-23.55.25:079][290]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.08.21-23.55.25:079][290]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.08.21-23.55.25:079][290]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.08.21-23.55.25:111][290]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.08.21-23.55.25:112][290]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.08.21-23.55.25:171][290]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2016.08.21-23.55.25:215][290]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.08.21-23.55.25:215][290]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.08.21-23.55.25:215][290]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.08.21-23.55.25:287][290]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.08.21-23.55.25:324][290]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.08.21-23.55.25:365][290]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.08.21-23.55.25:489][290]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.08.21-23.55.25:489][290]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.08.21-23.55.25:491][290]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2016.08.21-23.55.25:491][290]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2016.08.21-23.55.25:491][290]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2016.08.21-23.55.25:491][290]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2016.08.21-23.55.25:491][290]LogModuleManager: Shutting down and abandoning module Core (64)
+[2016.08.21-23.55.25:491][290]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2016.08.21-23.55.25:492][290]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2016.08.21-23.55.25:641][290]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.08.21-23.55.25:641][290]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.08.21-23.55.25:641][290]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.08.21-23.55.25:680][290]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.08.21-23.55.26:147][290]LogDerivedDataCache: Shutdown
+[2016.08.21-23.55.26:147][290]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2016.08.21-23.55.26:172][290]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.08.21-23.55.26:227][290]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.08.21-23.55.26:227][290]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.08.21-23.55.26:326][290]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.08.21-23.55.26:326][290]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.08.21-23.55.26:326][290]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.08.21-23.55.26:326][290]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.08.21-23.55.26:326][290]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.08.21-23.55.26:326][290]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.08.21-23.55.26:326][290]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.08.21-23.55.26:326][290]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.08.21-23.55.26:357][290]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.08.21-23.55.26:357][290]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.08.21-23.55.26:357][290]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.08.21-23.55.26:357][290]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.08.21-23.55.26:357][290]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.08.21-23.55.26:387][290]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.08.21-23.55.26:387][290]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.08.21-23.55.26:387][290]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.08.21-23.55.26:387][290]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.08.21-23.55.26:387][290]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.08.21-23.55.26:387][290]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.08.21-23.55.26:422][290]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.08.21-23.55.26:422][290]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.08.21-23.55.26:422][290]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.08.21-23.55.26:422][290]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.08.21-23.55.26:422][290]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.08.21-23.55.26:422][290]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.08.21-23.55.26:422][290]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.08.21-23.55.26:422][290]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.08.21-23.55.26:422][290]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.08.21-23.55.26:422][290]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.08.21-23.55.26:422][290]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.08.21-23.55.26:422][290]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.08.21-23.55.26:437][290]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.08.21-23.55.26:437][290]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.08.21-23.55.26:437][290]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.08.21-23.55.26:453][290]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.08.21-23.55.31:046][290]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.08.21-23.55.31:122][290]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.08.21-23.55.31:147][290]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.08.21-23.55.31:147][290]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.08.21-23.55.31:163][290]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.08.21-23.55.31:163][290]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.08.21-23.55.31:163][290]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.08.21-23.55.31:188][290]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.08.21-23.55.31:224][290]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.08.21-23.55.31:224][290]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.08.21-23.55.31:224][290]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.08.21-23.55.31:224][290]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.08.21-23.55.31:224][290]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.08.21-23.55.31:224][290]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.08.21-23.55.31:270][290]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.08.21-23.55.31:270][290]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.08.21-23.55.31:300][290]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.08.21-23.55.31:375][290]LogExit: Exiting.
+[2016.08.21-23.55.31:381][290]Log file closed, 08/21/16 19:55:31
